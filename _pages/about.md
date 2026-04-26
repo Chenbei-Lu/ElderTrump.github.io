@@ -22,7 +22,7 @@ redirect_from:
 ## Research Interests ##
 <font size=3> 
 
-<p>My research lies at the intersection of reinforcement learning theory, stochastic optimization, and robust control, with a focus on sustainable energy and computing systems. </p>
+<p>My research lies at the intersection of reinforcement learning theory, stochastic optimization, and robust control, with applications in sustainable energy and computing systems. </p>
 
 <p><b>Theoretically</b>, I develop reinforcement learning and control algorithms that leverage problem-specific structures to overcome the curse of dimensionality in sample efficiency and provide rigorous safety guarantees, which can enable their deployment in data-limited and safety-critical environments. </p>
 

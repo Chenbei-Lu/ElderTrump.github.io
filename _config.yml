@@ -13,7 +13,7 @@ name                     : &name "with my Elvin:)"
 description              : &description "Eric & Wendy Schmidt AI in Science Postdoctoral Fellow @ Cornell University"
 url                      : "https://luchenbei.com"
 baseurl                  : ""
-repository               : "Chenbei-Lu/ElderTrump.github.io"
+repository               : "ElderTrump.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160

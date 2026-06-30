@@ -11,9 +11,9 @@ title                    : "Chenbei Lu"
 title_separator          : "-"
 name                     : &name "with my Elvin:)"
 description              : &description "Eric & Wendy Schmidt AI in Science Postdoctoral Fellow @ Cornell University"
-url                      : https://eldertrump.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "eldertrump.github.io"
+url                      : "https://luchenbei.com"
+baseurl                  : ""
+repository               : "Chenbei-Lu/ElderTrump.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : #"academicpages"
+  github           : "Chenbei-Lu"
   google_plus      :
   keybase          :
   instagram        :

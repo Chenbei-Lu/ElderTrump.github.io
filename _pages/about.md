@@ -9,26 +9,24 @@ redirect_from:
 ---
 
 ## About Me ##
-<font size=3> I'm an Eric & Wendy Schmidt AI Postdoctoral Fellow in the AI for Science Institute at Cornell University, working with Prof. <a href="https://www.peese.org/professor/" target="_blank">Fengqi You</a>. Before that, I received my Ph.D. in Computer Science from the Institute for Interdisciplinary Information Sciences (IIIS) at Tsinghua University in 2025, advised by Prof. <a href="http://www.wuchenye.cn/" target="_blank">Chenye Wu</a> and Prof. <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target="_blank">Ran Duan</a>. I was a visiting student researcher at the Computing + Mathematical Sciences (CMS) Department, Caltech from Aug. 2023 to Mar. 2024, advised by Prof. <a href="https://adamwierman.com/" target="_blank">Adam Wierman</a>. I earned my bachelor's degree in Computer Software Engineering from Huazhong University of Science & Technology in 2020. </font>
+<font size=3>
 
+<p>I am an Eric & Wendy Schmidt AI in Science Postdoctoral Fellow at Cornell University, working with Prof. <a href="https://www.peese.org/professor/" target="_blank">Fengqi You</a>. My research develops structure-aware reinforcement learning, stochastic optimization, and safe control methods for large-scale energy and AI infrastructure.</p>
 
+<p>Before joining Cornell, I received my Ph.D. in Computer Science from the Institute for Interdisciplinary Information Sciences (IIIS) at Tsinghua University in 2025, advised by Prof. <a href="http://www.wuchenye.cn/" target="_blank">Chenye Wu</a> and Prof. <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target="_blank">Ran Duan</a>. I was also a visiting student researcher in the Computing + Mathematical Sciences Department at Caltech from Aug. 2023 to Mar. 2024, advised by Prof. <a href="https://adamwierman.com/" target="_blank">Adam Wierman</a>. I received my bachelor's degree in Computer Software Engineering from Huazhong University of Science & Technology in 2020.</p>
 
+</font>
 
-
-<p><font size=3> Contact: chenbei DOT lu AT cornell.edu</font></p>
+<p><font size=3>Contact: chenbei DOT lu AT cornell.edu</font></p>
 
 
 ---
 ## Research Interests ##
-<font size=3> 
+<font size=3>
 
-<p>My research lies at the intersection of reinforcement learning theory, stochastic optimization, and robust control, with applications in sustainable energy and computing systems. </p>
+<p>My research lies at the intersection of <b>reinforcement learning theory, stochastic optimization, and safe control</b>. I study how problem-specific structure—such as predictions, factorization, network coupling, safety constraints, and physical models—can be exploited to design learning algorithms that are sample-efficient, scalable, and reliable.</p>
 
-<p><b>Theoretically</b>, I develop reinforcement learning and control algorithms that leverage problem-specific structures to overcome the curse of dimensionality in sample efficiency and provide rigorous safety guarantees, which can enable their deployment in data-limited and safety-critical environments. </p>
-
-<p><b>Practically</b>, I apply these designed methods to the online operation of complex networked systems: (i) designing efficient and reliable scheduling algorithms for power grids to enhance the stability and sustainability of global energy supply, and (ii) optimizing energy–computation co-scheduling in large-scale data centers to achieve globally efficient and sustainable energy–AI integration.</p>
-
- 
+<p>My broader goal is to build a theoretical foundation for <b>structure-aware sequential decision-making</b> in safety-critical infrastructure. This perspective is motivated by energy and AI systems, where decisions are high-dimensional, data are limited, and reliability constraints are essential. My current applications include power-system operation, storage control, demand flexibility, AI datacenter scheduling, and energy–computation co-optimization.</p>
 
 </font>
 

@@ -1,4 +1,4 @@
----
+_---
 permalink: /
 title: ""
 excerpt: ""
@@ -26,7 +26,7 @@ redirect_from:
 
 <p>My research lies at the intersection of <b>reinforcement learning theory, stochastic optimization, and safe control</b>. I study how problem-specific structure—such as predictions, factorization, network coupling, safety constraints, and physical models—can be exploited to design learning algorithms that are sample-efficient, scalable, and reliable.</p>
 
-<p>My broader goal is to build a theoretical foundation for <b>structure-aware sequential decision-making</b> in safety-critical infrastructure. This perspective is motivated by energy and AI systems, where decisions are high-dimensional, data are limited, and reliability constraints are essential. My current applications include power-system operation, storage control, demand flexibility, AI datacenter scheduling, and energy–computation co-optimization.</p>
+<p>My broader goal is to build a theoretical foundation for <b>structure-aware sequential decision-making</b> in AI-energy infrastructure, where decisions are high-dimensional, data are limited, and reliability constraints are central. My current applications include power-system operation, storage control, demand flexibility, AI datacenter scheduling, and energy–computation co-optimization.</p>
 
 </font>
 
@@ -74,3 +74,4 @@ redirect_from:
 
 
 
+_

@@ -271,6 +271,14 @@ h3 {
   margin: 0;
 }
 
+.about-copy a,
+.authors a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .section-heading {
   margin-bottom: 28px;
 }

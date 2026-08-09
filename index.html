@@ -73,49 +73,36 @@
           <p class="authors">Chenbei Lu, Zaiwei Chen, Tongxin Li, <a href="http://www.wuchenye.cn/" target="_blank" rel="noreferrer">Chenye Wu</a>, and <a href="https://adamwierman.com/" target="_blank" rel="noreferrer">Adam Wierman</a></p>
           <a class="paper-link" href="https://arxiv.org/pdf/2510.18687">PDF</a>
         </div>
-        <div class="paper-visual bj-visual" role="img" aria-label="Animated schematic of imperfect transition predictions being corrected into a policy through a Bellman-Jensen update">
+        <div class="paper-visual mdp-visual" role="img" aria-label="Animated schematic of a prediction signal entering an MDP graph and highlighting a decision path">
         <div class="visual-grid" aria-hidden="true"></div>
-        <div class="visual-label prediction-label" aria-hidden="true">prediction</div>
-        <div class="visual-label policy-label" aria-hidden="true">policy</div>
-        <div class="seed-node" aria-hidden="true">s,a</div>
-        <div class="prediction-fan" aria-hidden="true">
-          <span class="prediction-path path-high-a"></span>
-          <span class="prediction-path path-high-b"></span>
-          <span class="prediction-path path-mid-a"></span>
-          <span class="prediction-path path-mid-b"></span>
-          <span class="prediction-path path-low-a"></span>
-          <span class="prediction-path path-low-b"></span>
-          <span class="forecast-endpoint endpoint-high"></span>
-          <span class="forecast-endpoint endpoint-mid"></span>
-          <span class="forecast-endpoint endpoint-low"></span>
-          <span class="forecast-particle particle-high"></span>
-          <span class="forecast-particle particle-mid"></span>
-          <span class="forecast-particle particle-low"></span>
-          <span class="noise-field"></span>
+        <div class="prediction-source" aria-hidden="true">
+          <span class="source-orbit orbit-one"></span>
+          <span class="source-orbit orbit-two"></span>
+          <span class="source-dot source-one"></span>
+          <span class="source-dot source-two"></span>
+          <span class="source-dot source-three"></span>
         </div>
-        <div class="visual-arrow arrow-to-lens" aria-hidden="true"></div>
-        <div class="bj-lens" aria-hidden="true">
-          <span class="lens-ring ring-outer"></span>
-          <span class="lens-ring ring-middle"></span>
-          <span class="lens-ring ring-inner"></span>
-          <span class="bj-core">BJ</span>
-          <span class="bj-name">B-J lens</span>
-        </div>
-        <div class="visual-arrow arrow-to-policy" aria-hidden="true"></div>
-        <div class="policy-map" aria-hidden="true">
-          <span class="policy-contour contour-one"></span>
-          <span class="policy-contour contour-two"></span>
-          <span class="policy-contour contour-three"></span>
-          <span class="policy-segment segment-one"></span>
-          <span class="policy-segment segment-two"></span>
-          <span class="policy-segment segment-three"></span>
-          <span class="policy-point point-one"></span>
-          <span class="policy-point point-two"></span>
-          <span class="policy-point point-three"></span>
-          <span class="policy-point point-four"></span>
-          <span class="policy-vector vector-one"></span>
-          <span class="policy-vector vector-two"></span>
-          <span class="policy-vector vector-three"></span>
+        <span class="prediction-particle flow-one" aria-hidden="true"></span>
+        <span class="prediction-particle flow-two" aria-hidden="true"></span>
+        <span class="prediction-particle flow-three" aria-hidden="true"></span>
+        <div class="mdp-graph" aria-hidden="true">
+          <span class="mdp-edge edge-s0-s1"></span>
+          <span class="mdp-edge edge-s0-s2"></span>
+          <span class="mdp-edge edge-s1-s3"></span>
+          <span class="mdp-edge edge-s2-s4"></span>
+          <span class="mdp-edge edge-s3-d"></span>
+          <span class="mdp-edge edge-s4-d"></span>
+          <span class="mdp-edge edge-s1-s2"></span>
+          <span class="route-edge route-s0-s1"></span>
+          <span class="route-edge route-s1-s3"></span>
+          <span class="route-edge route-s3-d"></span>
+          <span class="route-particle"></span>
+          <span class="mdp-node node-s0"></span>
+          <span class="mdp-node node-s1"></span>
+          <span class="mdp-node node-s2"></span>
+          <span class="mdp-node node-s3"></span>
+          <span class="mdp-node node-s4"></span>
+          <span class="mdp-node decision-node"></span>
         </div>
       </div>
       </article><article class="publication-card">

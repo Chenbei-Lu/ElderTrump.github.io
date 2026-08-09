@@ -1124,6 +1124,356 @@ h3 {
   }
 }
 
+.mdp-visual {
+  background:
+    radial-gradient(circle at 14% 50%, rgba(177, 134, 63, 0.14), transparent 30%),
+    radial-gradient(circle at 82% 50%, rgba(31, 95, 99, 0.1), transparent 34%),
+    linear-gradient(135deg, rgba(251, 252, 248, 0.98), rgba(255, 255, 255, 0.88));
+}
+
+.mdp-visual .visual-grid {
+  opacity: 0.42;
+  background-image:
+    linear-gradient(rgba(31, 95, 99, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 95, 99, 0.09) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.prediction-source {
+  position: absolute;
+  z-index: 4;
+  top: 24px;
+  left: 12px;
+  width: 54px;
+  height: 94px;
+}
+
+.source-orbit {
+  position: absolute;
+  border: 1px solid rgba(177, 134, 63, 0.28);
+  border-radius: 50%;
+  animation: sourceOrbit 4.8s ease-in-out infinite;
+}
+
+.orbit-one {
+  top: 19px;
+  left: 2px;
+  width: 48px;
+  height: 48px;
+}
+
+.orbit-two {
+  top: 7px;
+  left: -6px;
+  width: 70px;
+  height: 70px;
+  animation-delay: 0.7s;
+}
+
+.source-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(177, 134, 63, 0.1);
+}
+
+.source-one {
+  top: 18px;
+  left: 23px;
+}
+
+.source-two {
+  top: 43px;
+  left: 10px;
+  background: var(--teal);
+  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.1);
+}
+
+.source-three {
+  top: 67px;
+  left: 31px;
+  background: var(--burgundy);
+  box-shadow: 0 0 0 4px rgba(123, 69, 81, 0.1);
+}
+
+.prediction-particle,
+.route-particle {
+  position: absolute;
+  z-index: 7;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.prediction-particle {
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(177, 134, 63, 0.45);
+  animation: predictionFlow 4.4s ease-in-out infinite;
+}
+
+.flow-one {
+  offset-path: path("M 34 43 C 45 48 57 62 72 73");
+}
+
+.flow-two {
+  background: var(--teal);
+  box-shadow: 0 0 12px rgba(31, 95, 99, 0.4);
+  offset-path: path("M 23 70 C 40 70 56 72 72 73");
+  animation-delay: 0.6s;
+}
+
+.flow-three {
+  background: var(--burgundy);
+  box-shadow: 0 0 12px rgba(123, 69, 81, 0.38);
+  offset-path: path("M 42 95 C 52 88 61 79 72 73");
+  animation-delay: 1.2s;
+}
+
+.mdp-graph {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.mdp-edge,
+.route-edge {
+  position: absolute;
+  height: 2px;
+  border-radius: 999px;
+  transform-origin: left center;
+}
+
+.mdp-edge {
+  z-index: 2;
+  background: rgba(89, 100, 99, 0.26);
+}
+
+.mdp-edge::after,
+.route-edge::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 7px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid currentColor;
+}
+
+.mdp-edge::after {
+  color: rgba(89, 100, 99, 0.35);
+}
+
+.route-edge {
+  z-index: 3;
+  height: 4px;
+  background: rgba(177, 134, 63, 0.9);
+  color: rgba(177, 134, 63, 0.95);
+  box-shadow: 0 0 12px rgba(177, 134, 63, 0.22);
+  animation: routeGlow 4.4s ease-in-out infinite;
+}
+
+.edge-s0-s1,
+.route-s0-s1 {
+  top: 72px;
+  left: 72px;
+  width: 56px;
+  transform: rotate(-38deg);
+}
+
+.edge-s0-s2 {
+  top: 72px;
+  left: 72px;
+  width: 57px;
+  transform: rotate(33deg);
+}
+
+.edge-s1-s3,
+.route-s1-s3 {
+  top: 37px;
+  left: 116px;
+  width: 51px;
+  transform: rotate(20deg);
+}
+
+.edge-s2-s4 {
+  top: 103px;
+  left: 120px;
+  width: 54px;
+  transform: rotate(-1deg);
+}
+
+.edge-s3-d,
+.route-s3-d {
+  top: 54px;
+  left: 164px;
+  width: 46px;
+  transform: rotate(22deg);
+}
+
+.edge-s4-d {
+  top: 102px;
+  left: 174px;
+  width: 45px;
+  transform: rotate(-43deg);
+}
+
+.edge-s1-s2 {
+  top: 38px;
+  left: 116px;
+  width: 66px;
+  opacity: 0.48;
+  transform: rotate(86deg);
+}
+
+.route-particle {
+  background: var(--gold);
+  box-shadow: 0 0 14px rgba(177, 134, 63, 0.5);
+  offset-path: path("M 72 73 L 116 38 L 164 55 L 207 72");
+  animation: routeFlow 4.4s ease-in-out 1.1s infinite;
+}
+
+.mdp-node {
+  position: absolute;
+  z-index: 5;
+  width: 15px;
+  height: 15px;
+  border: 2px solid var(--teal);
+  border-radius: 50%;
+  background: rgba(251, 252, 248, 0.98);
+  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.05);
+}
+
+.node-s0 {
+  top: 65px;
+  left: 65px;
+  animation: entryNodePulse 4.4s ease-in-out infinite;
+}
+
+.node-s1 {
+  top: 30px;
+  left: 109px;
+}
+
+.node-s2 {
+  top: 96px;
+  left: 113px;
+}
+
+.node-s3 {
+  top: 47px;
+  left: 157px;
+}
+
+.node-s4 {
+  top: 95px;
+  left: 167px;
+}
+
+.decision-node {
+  top: 62px;
+  left: 197px;
+  width: 19px;
+  height: 19px;
+  border-color: var(--gold);
+  box-shadow:
+    0 0 0 5px rgba(177, 134, 63, 0.09),
+    0 0 18px rgba(177, 134, 63, 0.28);
+  animation: decisionPulse 4.4s ease-in-out infinite;
+}
+
+@keyframes sourceOrbit {
+  0%,
+  100% {
+    opacity: 0.32;
+    transform: scale(0.94);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes predictionFlow {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+
+  18%,
+  72% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+}
+
+@keyframes routeFlow {
+  0%,
+  26% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+
+  34%,
+  82% {
+    opacity: 1;
+  }
+
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes routeGlow {
+  0%,
+  26%,
+  100% {
+    opacity: 0.55;
+  }
+
+  58%,
+  82% {
+    opacity: 1;
+  }
+}
+
+@keyframes entryNodePulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.05);
+  }
+
+  42% {
+    box-shadow: 0 0 0 8px rgba(31, 95, 99, 0.14);
+  }
+}
+
+@keyframes decisionPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  64%,
+  82% {
+    transform: scale(1.12);
+  }
+}
+
 .plain-list {
   display: grid;
   gap: 16px;
@@ -1384,7 +1734,13 @@ h3 {
   .lens-ring,
   .bj-core,
   .policy-contour,
-  .policy-point {
+  .policy-point,
+  .source-orbit,
+  .prediction-particle,
+  .route-edge,
+  .route-particle,
+  .node-s0,
+  .decision-node {
     animation: none;
   }
 }

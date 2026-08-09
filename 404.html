@@ -75,14 +75,48 @@
         </div>
         <div class="paper-visual bj-visual" role="img" aria-label="Animated schematic of imperfect transition predictions being corrected into a policy through a Bellman-Jensen update">
         <div class="visual-grid" aria-hidden="true"></div>
-        <div class="visual-node prediction" aria-hidden="true">P&#770;</div>
-        <div class="visual-node bellman" aria-hidden="true">BJ</div>
-        <div class="visual-node policy" aria-hidden="true">&pi;</div>
-        <div class="visual-edge edge-in" aria-hidden="true"></div>
-        <div class="visual-edge edge-out" aria-hidden="true"></div>
-        <div class="visual-band band-low" aria-hidden="true"></div>
-        <div class="visual-band band-high" aria-hidden="true"></div>
-        <div class="visual-bars" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="visual-label prediction-label" aria-hidden="true">prediction</div>
+        <div class="visual-label policy-label" aria-hidden="true">policy</div>
+        <div class="seed-node" aria-hidden="true">s,a</div>
+        <div class="prediction-fan" aria-hidden="true">
+          <span class="prediction-path path-high-a"></span>
+          <span class="prediction-path path-high-b"></span>
+          <span class="prediction-path path-mid-a"></span>
+          <span class="prediction-path path-mid-b"></span>
+          <span class="prediction-path path-low-a"></span>
+          <span class="prediction-path path-low-b"></span>
+          <span class="forecast-endpoint endpoint-high"></span>
+          <span class="forecast-endpoint endpoint-mid"></span>
+          <span class="forecast-endpoint endpoint-low"></span>
+          <span class="forecast-particle particle-high"></span>
+          <span class="forecast-particle particle-mid"></span>
+          <span class="forecast-particle particle-low"></span>
+          <span class="noise-field"></span>
+        </div>
+        <div class="visual-arrow arrow-to-lens" aria-hidden="true"></div>
+        <div class="bj-lens" aria-hidden="true">
+          <span class="lens-ring ring-outer"></span>
+          <span class="lens-ring ring-middle"></span>
+          <span class="lens-ring ring-inner"></span>
+          <span class="bj-core">BJ</span>
+          <span class="bj-name">B-J lens</span>
+        </div>
+        <div class="visual-arrow arrow-to-policy" aria-hidden="true"></div>
+        <div class="policy-map" aria-hidden="true">
+          <span class="policy-contour contour-one"></span>
+          <span class="policy-contour contour-two"></span>
+          <span class="policy-contour contour-three"></span>
+          <span class="policy-segment segment-one"></span>
+          <span class="policy-segment segment-two"></span>
+          <span class="policy-segment segment-three"></span>
+          <span class="policy-point point-one"></span>
+          <span class="policy-point point-two"></span>
+          <span class="policy-point point-three"></span>
+          <span class="policy-point point-four"></span>
+          <span class="policy-vector vector-one"></span>
+          <span class="policy-vector vector-two"></span>
+          <span class="policy-vector vector-three"></span>
+        </div>
       </div>
       </article><article class="publication-card">
         <div class="venue">ICML 2025</div>

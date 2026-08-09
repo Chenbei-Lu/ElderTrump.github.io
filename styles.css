@@ -1131,7 +1131,14 @@ h3 {
     linear-gradient(135deg, rgba(251, 252, 248, 0.98), rgba(255, 255, 255, 0.88));
 }
 
+.mdp-visual *,
+.mdp-visual *::before,
+.mdp-visual *::after {
+  box-sizing: border-box;
+}
+
 .mdp-visual .visual-grid {
+  display: block;
   opacity: 0.42;
   background-image:
     linear-gradient(rgba(31, 95, 99, 0.09) 1px, transparent 1px),
@@ -1142,6 +1149,7 @@ h3 {
 .prediction-source {
   position: absolute;
   z-index: 4;
+  display: block;
   top: 24px;
   left: 12px;
   width: 54px;
@@ -1150,6 +1158,7 @@ h3 {
 
 .source-orbit {
   position: absolute;
+  display: block;
   border: 1px solid rgba(177, 134, 63, 0.28);
   border-radius: 50%;
   animation: sourceOrbit 4.8s ease-in-out infinite;
@@ -1172,6 +1181,7 @@ h3 {
 
 .source-dot {
   position: absolute;
+  display: block;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1202,6 +1212,7 @@ h3 {
 .route-particle {
   position: absolute;
   z-index: 7;
+  display: block;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -1235,6 +1246,7 @@ h3 {
 
 .mdp-graph {
   position: absolute;
+  display: block;
   inset: 0;
   z-index: 3;
 }
@@ -1242,6 +1254,7 @@ h3 {
 .mdp-edge,
 .route-edge {
   position: absolute;
+  display: block;
   height: 2px;
   border-radius: 999px;
   transform-origin: left center;
@@ -1250,6 +1263,7 @@ h3 {
 .mdp-edge {
   z-index: 2;
   background: rgba(89, 100, 99, 0.26);
+  color: rgba(89, 100, 99, 0.35);
 }
 
 .mdp-edge::after,
@@ -1341,6 +1355,7 @@ h3 {
 .mdp-node {
   position: absolute;
   z-index: 5;
+  display: block;
   width: 15px;
   height: 15px;
   border: 2px solid var(--teal);
@@ -1471,6 +1486,35 @@ h3 {
   64%,
   82% {
     transform: scale(1.12);
+  }
+}
+
+@supports not (offset-path: path("M 0 0 L 1 1")) {
+  .prediction-particle,
+  .route-particle {
+    animation: none;
+    opacity: 0.82;
+    transform: none;
+  }
+
+  .flow-one {
+    top: 43px;
+    left: 45px;
+  }
+
+  .flow-two {
+    top: 68px;
+    left: 47px;
+  }
+
+  .flow-three {
+    top: 89px;
+    left: 47px;
+  }
+
+  .route-particle {
+    top: 48px;
+    left: 156px;
   }
 }
 
@@ -1742,5 +1786,32 @@ h3 {
   .node-s0,
   .decision-node {
     animation: none;
+  }
+
+  .prediction-particle,
+  .route-particle {
+    opacity: 0.82;
+    offset-path: none;
+    transform: none;
+  }
+
+  .flow-one {
+    top: 43px;
+    left: 45px;
+  }
+
+  .flow-two {
+    top: 68px;
+    left: 47px;
+  }
+
+  .flow-three {
+    top: 89px;
+    left: 47px;
+  }
+
+  .route-particle {
+    top: 48px;
+    left: 156px;
   }
 }

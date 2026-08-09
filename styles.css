@@ -1518,6 +1518,443 @@ h3 {
   }
 }
 
+.factorization-visual {
+  background:
+    radial-gradient(circle at 20% 50%, rgba(31, 95, 99, 0.12), transparent 34%),
+    radial-gradient(circle at 78% 50%, rgba(177, 134, 63, 0.14), transparent 30%),
+    linear-gradient(135deg, rgba(251, 252, 248, 0.98), rgba(255, 255, 255, 0.9));
+}
+
+.factorization-visual *,
+.factorization-visual *::before,
+.factorization-visual *::after {
+  box-sizing: border-box;
+}
+
+.factorization-visual .visual-grid {
+  display: block;
+  opacity: 0.36;
+  background-image:
+    linear-gradient(rgba(31, 95, 99, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 95, 99, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.factor-source {
+  position: absolute;
+  z-index: 5;
+  display: block;
+  top: 28px;
+  left: 16px;
+  width: 56px;
+  height: 84px;
+}
+
+.factor-source-halo {
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: -2px;
+  width: 58px;
+  height: 72px;
+  border: 1px solid rgba(31, 95, 99, 0.28);
+  border-radius: 18px;
+  transform: rotate(-7deg);
+  animation: factorHalo 5.2s ease-in-out infinite;
+}
+
+.factor-dot,
+.factor-node,
+.factor-decision,
+.factor-flow,
+.factor-edge {
+  position: absolute;
+  display: block;
+}
+
+.factor-dot {
+  z-index: 6;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.08);
+  animation: factorDotPulse 5.2s ease-in-out infinite;
+}
+
+.f-dot-1 {
+  top: 14px;
+  left: 10px;
+}
+
+.f-dot-2 {
+  top: 12px;
+  left: 27px;
+  animation-delay: 0.18s;
+}
+
+.f-dot-3 {
+  top: 20px;
+  left: 43px;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(177, 134, 63, 0.08);
+  animation-delay: 0.36s;
+}
+
+.f-dot-4 {
+  top: 36px;
+  left: 8px;
+  background: var(--burgundy);
+  box-shadow: 0 0 0 4px rgba(123, 69, 81, 0.08);
+  animation-delay: 0.54s;
+}
+
+.f-dot-5 {
+  top: 35px;
+  left: 27px;
+  animation-delay: 0.72s;
+}
+
+.f-dot-6 {
+  top: 43px;
+  left: 45px;
+  background: var(--olive);
+  box-shadow: 0 0 0 4px rgba(101, 119, 68, 0.08);
+  animation-delay: 0.9s;
+}
+
+.f-dot-7 {
+  top: 59px;
+  left: 11px;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(177, 134, 63, 0.08);
+  animation-delay: 1.08s;
+}
+
+.f-dot-8 {
+  top: 64px;
+  left: 29px;
+  background: var(--burgundy);
+  box-shadow: 0 0 0 4px rgba(123, 69, 81, 0.08);
+  animation-delay: 1.26s;
+}
+
+.f-dot-9 {
+  top: 58px;
+  left: 45px;
+  animation-delay: 1.44s;
+}
+
+.factor-edge {
+  z-index: 2;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(89, 100, 99, 0.24);
+  color: rgba(89, 100, 99, 0.34);
+  transform-origin: left center;
+}
+
+.factor-edge::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 3px;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid currentColor;
+}
+
+.factor-input-one {
+  top: 58px;
+  left: 65px;
+  width: 46px;
+  transform: rotate(-34deg);
+}
+
+.factor-input-two {
+  top: 72px;
+  left: 65px;
+  width: 45px;
+}
+
+.factor-input-three {
+  top: 86px;
+  left: 65px;
+  width: 46px;
+  transform: rotate(34deg);
+}
+
+.factor-lane-one-a {
+  top: 36px;
+  left: 113px;
+  width: 35px;
+}
+
+.factor-lane-one-b {
+  top: 36px;
+  left: 150px;
+  width: 36px;
+  transform: rotate(7deg);
+}
+
+.factor-lane-two-a {
+  top: 72px;
+  left: 113px;
+  width: 35px;
+}
+
+.factor-lane-two-b {
+  top: 72px;
+  left: 150px;
+  width: 36px;
+}
+
+.factor-lane-three-a {
+  top: 107px;
+  left: 113px;
+  width: 35px;
+  transform: rotate(-7deg);
+}
+
+.factor-lane-three-b {
+  top: 102px;
+  left: 150px;
+  width: 36px;
+  transform: rotate(-14deg);
+}
+
+.factor-merge-one {
+  top: 39px;
+  left: 184px;
+  width: 40px;
+  transform: rotate(35deg);
+}
+
+.factor-merge-two {
+  top: 72px;
+  left: 184px;
+  width: 37px;
+}
+
+.factor-merge-three {
+  top: 98px;
+  left: 184px;
+  width: 40px;
+  transform: rotate(-34deg);
+}
+
+.factor-node {
+  z-index: 5;
+  width: 13px;
+  height: 13px;
+  border: 2px solid var(--teal);
+  border-radius: 50%;
+  background: rgba(251, 252, 248, 0.98);
+  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.05);
+  animation: factorNodeFocus 5.2s ease-in-out infinite;
+}
+
+.factor-one-a {
+  top: 30px;
+  left: 105px;
+  animation-delay: 0.12s;
+}
+
+.factor-one-b {
+  top: 30px;
+  left: 144px;
+  animation-delay: 0.28s;
+}
+
+.factor-one-c {
+  top: 33px;
+  left: 181px;
+  animation-delay: 0.44s;
+}
+
+.factor-two-a {
+  top: 66px;
+  left: 105px;
+  border-color: var(--gold);
+  animation-delay: 0.3s;
+}
+
+.factor-two-b {
+  top: 66px;
+  left: 144px;
+  border-color: var(--gold);
+  animation-delay: 0.46s;
+}
+
+.factor-two-c {
+  top: 66px;
+  left: 181px;
+  border-color: var(--gold);
+  animation-delay: 0.62s;
+}
+
+.factor-three-a {
+  top: 101px;
+  left: 105px;
+  border-color: var(--burgundy);
+  animation-delay: 0.48s;
+}
+
+.factor-three-b {
+  top: 97px;
+  left: 144px;
+  border-color: var(--burgundy);
+  animation-delay: 0.64s;
+}
+
+.factor-three-c {
+  top: 89px;
+  left: 181px;
+  border-color: var(--burgundy);
+  animation-delay: 0.8s;
+}
+
+.factor-decision {
+  z-index: 6;
+  top: 62px;
+  left: 210px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  background: rgba(251, 252, 248, 0.98);
+  box-shadow:
+    0 0 0 5px rgba(177, 134, 63, 0.1),
+    0 0 18px rgba(177, 134, 63, 0.26);
+  animation: factorDecisionPulse 5.2s ease-in-out infinite;
+}
+
+.factor-flow {
+  z-index: 7;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0;
+  background: var(--teal);
+  box-shadow: 0 0 12px rgba(31, 95, 99, 0.42);
+  offset-rotate: 0deg;
+  pointer-events: none;
+  animation: factorFlow 5.2s ease-in-out infinite;
+}
+
+.factor-flow-one {
+  offset-path: path("M 65 58 C 84 42 94 36 111 36 L 148 36 C 172 38 191 48 216 72");
+}
+
+.factor-flow-two {
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(177, 134, 63, 0.42);
+  offset-path: path("M 65 72 C 84 72 95 72 111 72 L 148 72 L 216 72");
+  animation-delay: 0.38s;
+}
+
+.factor-flow-three {
+  background: var(--burgundy);
+  box-shadow: 0 0 12px rgba(123, 69, 81, 0.36);
+  offset-path: path("M 65 86 C 84 102 96 107 111 107 L 148 102 C 172 99 191 91 216 72");
+  animation-delay: 0.76s;
+}
+
+@keyframes factorHalo {
+  0%,
+  100% {
+    opacity: 0.34;
+    transform: rotate(-7deg) scale(0.96);
+  }
+
+  50% {
+    opacity: 0.72;
+    transform: rotate(-7deg) scale(1.04);
+  }
+}
+
+@keyframes factorDotPulse {
+  0%,
+  100% {
+    opacity: 0.62;
+    transform: scale(0.94);
+  }
+
+  42%,
+  68% {
+    opacity: 1;
+    transform: scale(1.14);
+  }
+}
+
+@keyframes factorNodeFocus {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.05);
+  }
+
+  52% {
+    box-shadow: 0 0 0 7px rgba(31, 95, 99, 0.12);
+  }
+}
+
+@keyframes factorDecisionPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  66%,
+  84% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes factorFlow {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+
+  18%,
+  76% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+}
+
+@supports not (offset-path: path("M 0 0 L 1 1")) {
+  .factor-flow {
+    animation: none;
+    opacity: 0.82;
+    transform: none;
+  }
+
+  .factor-flow-one {
+    top: 33px;
+    left: 147px;
+  }
+
+  .factor-flow-two {
+    top: 69px;
+    left: 147px;
+  }
+
+  .factor-flow-three {
+    top: 99px;
+    left: 147px;
+  }
+}
+
 .plain-list {
   display: grid;
   gap: 16px;
@@ -1784,7 +2221,12 @@ h3 {
   .route-edge,
   .route-particle,
   .node-s0,
-  .decision-node {
+  .decision-node,
+  .factor-source-halo,
+  .factor-dot,
+  .factor-node,
+  .factor-decision,
+  .factor-flow {
     animation: none;
   }
 
@@ -1813,5 +2255,26 @@ h3 {
   .route-particle {
     top: 48px;
     left: 156px;
+  }
+
+  .factor-flow {
+    opacity: 0.82;
+    offset-path: none;
+    transform: none;
+  }
+
+  .factor-flow-one {
+    top: 33px;
+    left: 147px;
+  }
+
+  .factor-flow-two {
+    top: 69px;
+    left: 147px;
+  }
+
+  .factor-flow-three {
+    top: 99px;
+    left: 147px;
   }
 }

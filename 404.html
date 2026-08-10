@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <link rel="icon" href="favicon.png">
     <link rel="preload" href="research-map-v2-alpha.png" as="image">
-    <link rel="stylesheet" href="styles.css?v=20260810-energy-framework-visuals">
+    <link rel="stylesheet" href="styles.css?v=20260810-chance-policy-visual">
   </head>
   <body>
     <main>
@@ -247,14 +247,48 @@
           <span class="risk-band"></span>
         </div>
       </div>
-      </article><article class="publication-card">
+      </article><article class="publication-card publication-card-visualized">
         <div class="venue">IEEE Control Systems Letters</div>
         <div class="publication-main">
           <h3>On the Optimal Deterministic Policy Learning in Chance-Constrained Markov Decision Processes</h3>
           <p class="authors">Hongyu Yi*, Chenbei Lu*, and Chenye Wu</p>
           <a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/11165110">PDF</a>
         </div>
-        
+        <div class="paper-visual chance-visual" role="img" aria-label="Animated schematic inspired by the chance-constrained MDP paper: deterministic policy selection inside a probabilistic safety constraint">
+        <div class="visual-grid" aria-hidden="true"></div>
+        <div class="cc-policy-graph" aria-hidden="true">
+          <span class="cc-edge cc-edge-one"></span>
+          <span class="cc-edge cc-edge-two"></span>
+          <span class="cc-edge cc-edge-three"></span>
+          <span class="cc-edge cc-edge-four"></span>
+          <span class="cc-edge cc-policy-edge cc-policy-edge-one"></span>
+          <span class="cc-edge cc-policy-edge cc-policy-edge-two"></span>
+          <span class="cc-state cc-state-one"></span>
+          <span class="cc-state cc-state-two"></span>
+          <span class="cc-state cc-state-three"></span>
+          <span class="cc-state cc-state-four"></span>
+          <span class="cc-action-choice cc-choice-one"></span>
+          <span class="cc-action-choice cc-choice-two"></span>
+        </div>
+        <span class="cc-flow-dot cc-flow-dot-one" aria-hidden="true"></span>
+        <span class="cc-flow-dot cc-flow-dot-two" aria-hidden="true"></span>
+        <div class="chance-gate" aria-hidden="true">
+          <span class="gate-ring gate-ring-outer"></span>
+          <span class="gate-ring gate-ring-inner"></span>
+          <span class="gate-shield"></span>
+          <span class="gate-threshold"></span>
+        </div>
+        <div class="feasible-map" aria-hidden="true">
+          <span class="feasible-region"></span>
+          <span class="constraint-boundary"></span>
+          <span class="candidate-dot candidate-one"></span>
+          <span class="candidate-dot candidate-two"></span>
+          <span class="candidate-dot candidate-three"></span>
+          <span class="candidate-dot chosen-policy"></span>
+          <span class="unsafe-dot unsafe-one"></span>
+          <span class="unsafe-dot unsafe-two"></span>
+        </div>
+      </div>
       </article></div>
       </section>
 

@@ -1929,12 +1929,16 @@ h3 {
 .storage-visual *::after,
 .dispatch-visual *,
 .dispatch-visual *::before,
-.dispatch-visual *::after {
+.dispatch-visual *::after,
+.chance-visual *,
+.chance-visual *::before,
+.chance-visual *::after {
   box-sizing: border-box;
 }
 
 .storage-visual .visual-grid,
-.dispatch-visual .visual-grid {
+.dispatch-visual .visual-grid,
+.chance-visual .visual-grid {
   display: block;
   opacity: 0.34;
   background-image:
@@ -2419,6 +2423,340 @@ h3 {
   animation: riskBand 5s ease-in-out infinite;
 }
 
+.chance-visual {
+  background:
+    radial-gradient(circle at 29% 47%, rgba(31, 95, 99, 0.12), transparent 31%),
+    radial-gradient(circle at 76% 49%, rgba(177, 134, 63, 0.13), transparent 28%),
+    linear-gradient(135deg, rgba(251, 252, 248, 0.98), rgba(255, 255, 255, 0.9));
+}
+
+.cc-policy-graph,
+.chance-gate,
+.feasible-map {
+  position: absolute;
+  display: block;
+}
+
+.cc-policy-graph {
+  z-index: 5;
+  top: 31px;
+  left: 16px;
+  width: 75px;
+  height: 78px;
+}
+
+.cc-edge,
+.cc-state,
+.cc-action-choice {
+  position: absolute;
+  display: block;
+}
+
+.cc-edge {
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(31, 95, 99, 0.18);
+  transform-origin: left center;
+}
+
+.cc-edge-one {
+  top: 18px;
+  left: 12px;
+  width: 45px;
+  transform: rotate(15deg);
+}
+
+.cc-edge-two {
+  top: 18px;
+  left: 12px;
+  width: 44px;
+  transform: rotate(49deg);
+}
+
+.cc-edge-three {
+  top: 54px;
+  left: 12px;
+  width: 44px;
+  transform: rotate(-28deg);
+}
+
+.cc-edge-four {
+  top: 54px;
+  left: 12px;
+  width: 45px;
+  transform: rotate(10deg);
+}
+
+.cc-policy-edge {
+  z-index: 2;
+  height: 3px;
+  background: rgba(177, 134, 63, 0.88);
+  box-shadow: 0 0 12px rgba(177, 134, 63, 0.22);
+  animation: ccPolicyGlow 5.2s ease-in-out infinite;
+}
+
+.cc-policy-edge::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 7px solid rgba(177, 134, 63, 0.92);
+}
+
+.cc-policy-edge-one {
+  top: 18px;
+  left: 12px;
+  width: 45px;
+  transform: rotate(15deg);
+}
+
+.cc-policy-edge-two {
+  top: 54px;
+  left: 12px;
+  width: 44px;
+  transform: rotate(-28deg);
+  animation-delay: 0.38s;
+}
+
+.cc-state {
+  z-index: 3;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--teal);
+  border-radius: 50%;
+  background: rgba(251, 252, 248, 0.98);
+  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.06);
+}
+
+.cc-state-one {
+  top: 12px;
+  left: 0;
+}
+
+.cc-state-two {
+  top: 49px;
+  left: 0;
+}
+
+.cc-state-three {
+  top: 20px;
+  left: 57px;
+}
+
+.cc-state-four {
+  top: 34px;
+  left: 57px;
+  border-color: var(--burgundy);
+}
+
+.cc-action-choice {
+  z-index: 4;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: ccChoicePulse 5.2s ease-in-out infinite;
+}
+
+.cc-choice-one {
+  top: 19px;
+  left: 33px;
+}
+
+.cc-choice-two {
+  top: 44px;
+  left: 33px;
+  background: var(--teal);
+  animation-delay: 0.4s;
+}
+
+.cc-flow-dot {
+  position: absolute;
+  z-index: 8;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(177, 134, 63, 0.42);
+  pointer-events: none;
+}
+
+.cc-flow-dot-one {
+  top: 66px;
+  left: 80px;
+  animation: ccFlowGate 5.2s ease-in-out infinite;
+}
+
+.cc-flow-dot-two {
+  top: 66px;
+  left: 131px;
+  background: var(--teal);
+  box-shadow: 0 0 12px rgba(31, 95, 99, 0.42);
+  animation: ccFlowFeasible 5.2s ease-in-out infinite 0.5s;
+}
+
+.chance-gate {
+  z-index: 5;
+  top: 35px;
+  left: 91px;
+  width: 56px;
+  height: 72px;
+}
+
+.gate-ring,
+.gate-shield,
+.gate-threshold {
+  position: absolute;
+  display: block;
+}
+
+.gate-ring {
+  border: 2px solid rgba(31, 95, 99, 0.28);
+  border-radius: 50%;
+  animation: chanceGatePulse 5.2s ease-in-out infinite;
+}
+
+.gate-ring-outer {
+  top: 6px;
+  left: 2px;
+  width: 52px;
+  height: 52px;
+}
+
+.gate-ring-inner {
+  top: 17px;
+  left: 13px;
+  width: 30px;
+  height: 30px;
+  border-color: rgba(177, 134, 63, 0.38);
+  animation-delay: 0.32s;
+}
+
+.gate-shield {
+  top: 22px;
+  left: 20px;
+  width: 17px;
+  height: 20px;
+  clip-path: polygon(50% 0, 88% 14%, 82% 70%, 50% 100%, 18% 70%, 12% 14%);
+  background: var(--teal);
+  box-shadow: 0 0 14px rgba(31, 95, 99, 0.26);
+  animation: gateShield 5.2s ease-in-out infinite;
+}
+
+.gate-threshold {
+  top: 8px;
+  left: 28px;
+  width: 1px;
+  height: 52px;
+  border-left: 1px dashed rgba(123, 69, 81, 0.44);
+  transform: rotate(18deg);
+}
+
+.feasible-map {
+  z-index: 5;
+  top: 29px;
+  left: 158px;
+  width: 63px;
+  height: 79px;
+}
+
+.feasible-region,
+.constraint-boundary,
+.candidate-dot,
+.unsafe-dot {
+  position: absolute;
+  display: block;
+}
+
+.feasible-region {
+  top: 10px;
+  left: 4px;
+  width: 51px;
+  height: 56px;
+  border: 2px solid rgba(31, 95, 99, 0.3);
+  border-radius: 47% 53% 48% 52% / 42% 44% 56% 58%;
+  background: rgba(31, 95, 99, 0.06);
+  transform: rotate(-9deg);
+  animation: feasibleRegion 5.2s ease-in-out infinite;
+}
+
+.constraint-boundary {
+  top: 38px;
+  left: 6px;
+  width: 52px;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(177, 134, 63, 0.68);
+  transform: rotate(-8deg);
+}
+
+.candidate-dot,
+.unsafe-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.candidate-dot {
+  background: var(--teal);
+  opacity: 0.76;
+  animation: candidatePulse 5.2s ease-in-out infinite;
+}
+
+.candidate-one {
+  top: 24px;
+  left: 18px;
+}
+
+.candidate-two {
+  top: 47px;
+  left: 18px;
+  background: var(--gold);
+  animation-delay: 0.24s;
+}
+
+.candidate-three {
+  top: 29px;
+  left: 40px;
+  background: var(--burgundy);
+  animation-delay: 0.48s;
+}
+
+.chosen-policy {
+  top: 34px;
+  left: 29px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--gold);
+  background: rgba(251, 252, 248, 0.98);
+  box-shadow: 0 0 0 6px rgba(177, 134, 63, 0.1);
+  animation: chosenPolicy 5.2s ease-in-out infinite;
+}
+
+.unsafe-dot {
+  background: var(--burgundy);
+  opacity: 0.62;
+  box-shadow: 0 0 0 4px rgba(123, 69, 81, 0.07);
+  animation: unsafeFade 5.2s ease-in-out infinite;
+}
+
+.unsafe-one {
+  top: 10px;
+  left: 53px;
+}
+
+.unsafe-two {
+  top: 61px;
+  left: 50px;
+  animation-delay: 0.42s;
+}
+
 @keyframes windBarRise {
   0%,
   100% {
@@ -2588,6 +2926,132 @@ h3 {
   0%,
   100% {
     opacity: 0.38;
+  }
+
+  52% {
+    opacity: 0.78;
+  }
+}
+
+@keyframes ccPolicyGlow {
+  0%,
+  100% {
+    opacity: 0.62;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes ccChoicePulse {
+  0%,
+  100% {
+    transform: scale(0.92);
+  }
+
+  52% {
+    transform: scale(1.22);
+  }
+}
+
+@keyframes ccFlowGate {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.78);
+  }
+
+  18%,
+  72% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(43px, -1px) scale(0.78);
+  }
+}
+
+@keyframes ccFlowFeasible {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.78);
+  }
+
+  18%,
+  72% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(39px, -1px) scale(0.78);
+  }
+}
+
+@keyframes chanceGatePulse {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: scale(0.96);
+  }
+
+  50% {
+    opacity: 0.86;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gateShield {
+  0%,
+  100% {
+    transform: scale(0.94);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes feasibleRegion {
+  0%,
+  100% {
+    opacity: 0.52;
+    transform: rotate(-9deg) scale(0.98);
+  }
+
+  52% {
+    opacity: 0.86;
+    transform: rotate(-9deg) scale(1.04);
+  }
+}
+
+@keyframes candidatePulse {
+  0%,
+  100% {
+    transform: scale(0.94);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes chosenPolicy {
+  0%,
+  100% {
+    transform: scale(0.96);
+  }
+
+  52% {
+    transform: scale(1.16);
+  }
+}
+
+@keyframes unsafeFade {
+  0%,
+  100% {
+    opacity: 0.46;
   }
 
   52% {
@@ -2910,7 +3374,16 @@ h3 {
   .uncertainty-ring,
   .uncertainty-core,
   .dispatch-bar,
-  .risk-band {
+  .risk-band,
+  .cc-policy-edge,
+  .cc-action-choice,
+  .cc-flow-dot,
+  .gate-ring,
+  .gate-shield,
+  .feasible-region,
+  .candidate-dot,
+  .chosen-policy,
+  .unsafe-dot {
     animation: none;
   }
 
@@ -2987,5 +3460,20 @@ h3 {
   .dispatch-flow-two {
     top: 65px;
     left: 151px;
+  }
+
+  .cc-flow-dot {
+    opacity: 0.82;
+    transform: none;
+  }
+
+  .cc-flow-dot-one {
+    top: 66px;
+    left: 113px;
+  }
+
+  .cc-flow-dot-two {
+    top: 66px;
+    left: 164px;
   }
 }

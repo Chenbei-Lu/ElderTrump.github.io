@@ -1917,6 +1917,713 @@ h3 {
   }
 }
 
+.storage-visual {
+  background:
+    radial-gradient(circle at 44% 54%, rgba(31, 95, 99, 0.11), transparent 34%),
+    radial-gradient(circle at 79% 46%, rgba(177, 134, 63, 0.12), transparent 28%),
+    linear-gradient(135deg, rgba(251, 252, 248, 0.98), rgba(255, 255, 255, 0.9));
+}
+
+.storage-visual *,
+.storage-visual *::before,
+.storage-visual *::after,
+.dispatch-visual *,
+.dispatch-visual *::before,
+.dispatch-visual *::after {
+  box-sizing: border-box;
+}
+
+.storage-visual .visual-grid,
+.dispatch-visual .visual-grid {
+  display: block;
+  opacity: 0.34;
+  background-image:
+    linear-gradient(rgba(31, 95, 99, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 95, 99, 0.08) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+.wind-profile,
+.storage-core,
+.commitment-track,
+.improvement-loop {
+  position: absolute;
+  display: block;
+}
+
+.wind-profile {
+  z-index: 4;
+  top: 30px;
+  left: 14px;
+  width: 58px;
+  height: 72px;
+  border-bottom: 1px solid rgba(31, 95, 99, 0.28);
+}
+
+.wind-bar {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 5px;
+  border-radius: 999px 999px 0 0;
+  background: var(--teal);
+  opacity: 0.76;
+  animation: windBarRise 4.8s ease-in-out infinite;
+}
+
+.wind-bar-1 {
+  left: 2px;
+  height: 22px;
+}
+
+.wind-bar-2 {
+  left: 10px;
+  height: 44px;
+  animation-delay: 0.14s;
+}
+
+.wind-bar-3 {
+  left: 18px;
+  height: 31px;
+  animation-delay: 0.28s;
+}
+
+.wind-bar-4 {
+  left: 26px;
+  height: 57px;
+  background: var(--gold);
+  animation-delay: 0.42s;
+}
+
+.wind-bar-5 {
+  left: 34px;
+  height: 38px;
+  animation-delay: 0.56s;
+}
+
+.wind-bar-6 {
+  left: 42px;
+  height: 50px;
+  background: var(--burgundy);
+  animation-delay: 0.7s;
+}
+
+.wind-bar-7 {
+  left: 50px;
+  height: 28px;
+  animation-delay: 0.84s;
+}
+
+.storage-core {
+  z-index: 5;
+  top: 37px;
+  left: 86px;
+  width: 54px;
+  height: 61px;
+}
+
+.battery-shell {
+  position: absolute;
+  display: block;
+  top: 17px;
+  left: 11px;
+  width: 31px;
+  height: 37px;
+  border: 2px solid var(--teal);
+  border-radius: 7px;
+  background: rgba(251, 252, 248, 0.98);
+  box-shadow: 0 0 0 5px rgba(31, 95, 99, 0.06);
+}
+
+.battery-shell::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 9px;
+  width: 9px;
+  height: 4px;
+  border-radius: 4px 4px 0 0;
+  background: var(--teal);
+}
+
+.battery-level {
+  position: absolute;
+  display: block;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  height: 17px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(177, 134, 63, 0.95), rgba(31, 95, 99, 0.88));
+  animation: batteryLevel 4.8s ease-in-out infinite;
+}
+
+.storage-orbit {
+  position: absolute;
+  display: block;
+  border: 1px solid rgba(177, 134, 63, 0.26);
+  border-radius: 50%;
+  animation: storageOrbit 4.8s ease-in-out infinite;
+}
+
+.storage-orbit-one {
+  top: 8px;
+  left: 3px;
+  width: 48px;
+  height: 48px;
+}
+
+.storage-orbit-two {
+  top: 1px;
+  left: -3px;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0.5s;
+}
+
+.storage-particle {
+  position: absolute;
+  z-index: 7;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0;
+  background: var(--gold);
+  box-shadow: 0 0 13px rgba(177, 134, 63, 0.48);
+  pointer-events: none;
+  animation: storageFlow 4.8s ease-in-out infinite;
+}
+
+.storage-particle-in {
+  offset-path: path("M 59 69 C 71 62 79 58 94 66");
+}
+
+.storage-particle-out {
+  background: var(--teal);
+  box-shadow: 0 0 13px rgba(31, 95, 99, 0.42);
+  offset-path: path("M 125 66 C 138 61 148 61 162 67");
+  animation-delay: 0.7s;
+}
+
+.commitment-track {
+  z-index: 4;
+  top: 37px;
+  left: 155px;
+  width: 68px;
+  height: 64px;
+}
+
+.commitment-wave,
+.commitment-line,
+.commitment-node {
+  position: absolute;
+  display: block;
+}
+
+.commitment-wave {
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(123, 69, 81, 0.26);
+  transform-origin: left center;
+  animation: commitmentWave 4.8s ease-in-out infinite;
+}
+
+.wave-one {
+  top: 18px;
+  left: 4px;
+  width: 25px;
+  transform: rotate(-18deg);
+}
+
+.wave-two {
+  top: 30px;
+  left: 26px;
+  width: 32px;
+  transform: rotate(15deg);
+  animation-delay: 0.4s;
+}
+
+.commitment-line {
+  top: 40px;
+  left: 2px;
+  width: 62px;
+  height: 4px;
+  border-radius: 999px;
+  background: rgba(177, 134, 63, 0.92);
+  box-shadow: 0 0 12px rgba(177, 134, 63, 0.22);
+}
+
+.commitment-node {
+  top: 36px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  background: rgba(251, 252, 248, 0.98);
+  animation: commitmentNode 4.8s ease-in-out infinite;
+}
+
+.commit-one {
+  left: 2px;
+}
+
+.commit-two {
+  left: 29px;
+  animation-delay: 0.24s;
+}
+
+.commit-three {
+  left: 57px;
+  animation-delay: 0.48s;
+}
+
+.improvement-loop {
+  z-index: 5;
+  top: 101px;
+  left: 88px;
+  width: 58px;
+  height: 25px;
+}
+
+.loop-arc,
+.loop-dot {
+  position: absolute;
+  display: block;
+}
+
+.loop-arc {
+  width: 26px;
+  height: 14px;
+  border-top: 2px solid rgba(31, 95, 99, 0.38);
+  border-radius: 50%;
+  animation: loopArc 4.8s ease-in-out infinite;
+}
+
+.loop-arc-one {
+  top: 2px;
+  left: 7px;
+}
+
+.loop-arc-two {
+  top: 8px;
+  left: 24px;
+  transform: rotate(180deg);
+  animation-delay: 0.38s;
+}
+
+.loop-dot {
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.08);
+  animation: loopDot 4.8s ease-in-out infinite;
+}
+
+.loop-dot-one {
+  left: 8px;
+}
+
+.loop-dot-two {
+  left: 26px;
+  background: var(--gold);
+  box-shadow: 0 0 0 4px rgba(177, 134, 63, 0.08);
+  animation-delay: 0.32s;
+}
+
+.loop-dot-three {
+  left: 44px;
+  background: var(--burgundy);
+  box-shadow: 0 0 0 4px rgba(123, 69, 81, 0.08);
+  animation-delay: 0.64s;
+}
+
+.dispatch-visual {
+  background:
+    radial-gradient(circle at 24% 46%, rgba(123, 69, 81, 0.11), transparent 30%),
+    radial-gradient(circle at 55% 52%, rgba(31, 95, 99, 0.12), transparent 31%),
+    linear-gradient(135deg, rgba(251, 252, 248, 0.98), rgba(255, 255, 255, 0.9));
+}
+
+.sample-cloud,
+.uncertainty-set,
+.dispatch-decision {
+  position: absolute;
+  display: block;
+}
+
+.sample-cloud {
+  z-index: 4;
+  top: 31px;
+  left: 17px;
+  width: 58px;
+  height: 74px;
+  border: 1px solid rgba(123, 69, 81, 0.24);
+  border-radius: 20px;
+  transform: rotate(-5deg);
+}
+
+.sample-dot {
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--burgundy);
+  opacity: 0.78;
+  animation: samplePulse 5s ease-in-out infinite;
+}
+
+.sample-1 { top: 12px; left: 18px; }
+.sample-2 { top: 17px; left: 34px; animation-delay: 0.12s; }
+.sample-3 { top: 25px; left: 12px; background: var(--teal); animation-delay: 0.24s; }
+.sample-4 { top: 30px; left: 40px; animation-delay: 0.36s; }
+.sample-5 { top: 38px; left: 25px; background: var(--gold); animation-delay: 0.48s; }
+.sample-6 { top: 46px; left: 10px; animation-delay: 0.6s; }
+.sample-7 { top: 50px; left: 34px; background: var(--teal); animation-delay: 0.72s; }
+.sample-8 { top: 58px; left: 20px; animation-delay: 0.84s; }
+.sample-9 { top: 9px; left: 28px; background: var(--gold); animation-delay: 0.96s; }
+.sample-10 { top: 34px; left: 49px; background: var(--teal); animation-delay: 1.08s; }
+.sample-11 { top: 60px; left: 43px; animation-delay: 1.2s; }
+.sample-12 { top: 42px; left: 17px; background: var(--gold); animation-delay: 1.32s; }
+
+.dispatch-flow {
+  position: absolute;
+  z-index: 7;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  opacity: 0;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(177, 134, 63, 0.42);
+  pointer-events: none;
+  animation: dispatchFlow 5s ease-in-out infinite;
+}
+
+.dispatch-flow-one {
+  offset-path: path("M 70 67 C 86 58 96 58 111 70");
+}
+
+.dispatch-flow-two {
+  background: var(--teal);
+  box-shadow: 0 0 12px rgba(31, 95, 99, 0.42);
+  offset-path: path("M 136 70 C 151 61 165 59 180 72");
+  animation-delay: 0.65s;
+}
+
+.uncertainty-set {
+  z-index: 5;
+  top: 40px;
+  left: 91px;
+  width: 57px;
+  height: 57px;
+}
+
+.uncertainty-ring,
+.uncertainty-core {
+  position: absolute;
+  display: block;
+}
+
+.uncertainty-ring {
+  border: 2px solid rgba(31, 95, 99, 0.28);
+  border-radius: 50%;
+  animation: uncertaintyRing 5s ease-in-out infinite;
+}
+
+.ring-outer {
+  inset: 0;
+}
+
+.ring-inner {
+  inset: 10px;
+  border-color: rgba(177, 134, 63, 0.42);
+  animation-delay: 0.4s;
+}
+
+.uncertainty-core {
+  top: 22px;
+  left: 22px;
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  background: var(--teal);
+  transform: rotate(45deg);
+  box-shadow: 0 0 14px rgba(31, 95, 99, 0.26);
+  animation: uncertaintyCore 5s ease-in-out infinite;
+}
+
+.dispatch-decision {
+  z-index: 5;
+  top: 39px;
+  left: 168px;
+  width: 51px;
+  height: 66px;
+  border-left: 1px solid rgba(89, 100, 99, 0.24);
+  border-bottom: 1px solid rgba(89, 100, 99, 0.24);
+}
+
+.dispatch-bar,
+.dispatch-baseline,
+.risk-band {
+  position: absolute;
+  display: block;
+}
+
+.dispatch-bar {
+  bottom: 5px;
+  width: 8px;
+  border-radius: 999px 999px 0 0;
+  background: var(--teal);
+  animation: dispatchBar 5s ease-in-out infinite;
+}
+
+.dispatch-bar-one {
+  left: 9px;
+  height: 28px;
+}
+
+.dispatch-bar-two {
+  left: 23px;
+  height: 45px;
+  background: var(--gold);
+  animation-delay: 0.24s;
+}
+
+.dispatch-bar-three {
+  left: 37px;
+  height: 34px;
+  background: var(--burgundy);
+  animation-delay: 0.48s;
+}
+
+.dispatch-baseline {
+  left: 5px;
+  right: 2px;
+  bottom: 26px;
+  height: 2px;
+  border-radius: 999px;
+  background: rgba(177, 134, 63, 0.75);
+}
+
+.risk-band {
+  left: 5px;
+  right: 2px;
+  bottom: 21px;
+  height: 12px;
+  border-top: 1px dashed rgba(177, 134, 63, 0.5);
+  border-bottom: 1px dashed rgba(177, 134, 63, 0.5);
+  animation: riskBand 5s ease-in-out infinite;
+}
+
+@keyframes windBarRise {
+  0%,
+  100% {
+    transform: scaleY(0.76);
+  }
+
+  48% {
+    transform: scaleY(1.04);
+  }
+}
+
+@keyframes batteryLevel {
+  0%,
+  100% {
+    height: 14px;
+  }
+
+  52% {
+    height: 25px;
+  }
+}
+
+@keyframes storageOrbit {
+  0%,
+  100% {
+    opacity: 0.32;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 0.78;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes storageFlow {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+
+  18%,
+  72% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+}
+
+@keyframes commitmentWave {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 0.82;
+  }
+}
+
+@keyframes commitmentNode {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  54% {
+    transform: scale(1.14);
+  }
+}
+
+@keyframes loopArc {
+  0%,
+  100% {
+    opacity: 0.34;
+  }
+
+  50% {
+    opacity: 0.82;
+  }
+}
+
+@keyframes loopDot {
+  0%,
+  100% {
+    transform: scale(0.94);
+  }
+
+  50% {
+    transform: scale(1.14);
+  }
+}
+
+@keyframes samplePulse {
+  0%,
+  100% {
+    transform: scale(0.9);
+  }
+
+  48% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes dispatchFlow {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+
+  18%,
+  76% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+    transform: scale(0.72);
+  }
+}
+
+@keyframes uncertaintyRing {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: scale(0.96);
+  }
+
+  52% {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes uncertaintyCore {
+  0%,
+  100% {
+    transform: rotate(45deg) scale(0.96);
+  }
+
+  52% {
+    transform: rotate(45deg) scale(1.14);
+  }
+}
+
+@keyframes dispatchBar {
+  0%,
+  100% {
+    transform: scaleY(0.84);
+  }
+
+  52% {
+    transform: scaleY(1.06);
+  }
+}
+
+@keyframes riskBand {
+  0%,
+  100% {
+    opacity: 0.38;
+  }
+
+  52% {
+    opacity: 0.78;
+  }
+}
+
+@supports not (offset-path: path("M 0 0 L 1 1")) {
+  .storage-particle,
+  .dispatch-flow {
+    animation: none;
+    opacity: 0.82;
+    transform: none;
+  }
+
+  .storage-particle-in {
+    top: 61px;
+    left: 75px;
+  }
+
+  .storage-particle-out {
+    top: 61px;
+    left: 145px;
+  }
+
+  .dispatch-flow-one {
+    top: 64px;
+    left: 91px;
+  }
+
+  .dispatch-flow-two {
+    top: 65px;
+    left: 151px;
+  }
+}
+
 .plain-list {
   display: grid;
   gap: 16px;
@@ -2189,7 +2896,21 @@ h3 {
   .complex-edge,
   .simple-bipartite,
   .simple-edge,
-  .split-flow {
+  .split-flow,
+  .wind-bar,
+  .storage-particle,
+  .storage-orbit,
+  .battery-level,
+  .commitment-wave,
+  .commitment-node,
+  .loop-arc,
+  .loop-dot,
+  .sample-dot,
+  .dispatch-flow,
+  .uncertainty-ring,
+  .uncertainty-core,
+  .dispatch-bar,
+  .risk-band {
     animation: none;
   }
 
@@ -2239,5 +2960,32 @@ h3 {
   .split-flow-three {
     top: 105px;
     left: 126px;
+  }
+
+  .storage-particle,
+  .dispatch-flow {
+    opacity: 0.82;
+    offset-path: none;
+    transform: none;
+  }
+
+  .storage-particle-in {
+    top: 61px;
+    left: 75px;
+  }
+
+  .storage-particle-out {
+    top: 61px;
+    left: 145px;
+  }
+
+  .dispatch-flow-one {
+    top: 64px;
+    left: 91px;
+  }
+
+  .dispatch-flow-two {
+    top: 65px;
+    left: 151px;
   }
 }

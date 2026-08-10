@@ -1520,8 +1520,8 @@ h3 {
 
 .factorization-visual {
   background:
-    radial-gradient(circle at 20% 50%, rgba(31, 95, 99, 0.12), transparent 34%),
-    radial-gradient(circle at 78% 50%, rgba(177, 134, 63, 0.14), transparent 30%),
+    radial-gradient(circle at 24% 50%, rgba(31, 95, 99, 0.13), transparent 33%),
+    radial-gradient(circle at 77% 50%, rgba(177, 134, 63, 0.13), transparent 31%),
     linear-gradient(135deg, rgba(251, 252, 248, 0.98), rgba(255, 255, 255, 0.9));
 }
 
@@ -1540,298 +1540,250 @@ h3 {
   background-size: 18px 18px;
 }
 
-.factor-source {
-  position: absolute;
-  z-index: 5;
-  display: block;
-  top: 28px;
-  left: 16px;
-  width: 56px;
-  height: 84px;
-}
-
-.factor-source-halo {
-  position: absolute;
-  display: block;
-  top: 5px;
-  left: -2px;
-  width: 58px;
-  height: 72px;
-  border: 1px solid rgba(31, 95, 99, 0.28);
-  border-radius: 18px;
-  transform: rotate(-7deg);
-  animation: factorHalo 5.2s ease-in-out infinite;
-}
-
-.factor-dot,
-.factor-node,
-.factor-decision,
-.factor-flow,
-.factor-edge {
+.complex-bipartite,
+.simple-bipartite {
   position: absolute;
   display: block;
 }
 
-.factor-dot {
-  z-index: 6;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--teal);
-  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.08);
-  animation: factorDotPulse 5.2s ease-in-out infinite;
-}
-
-.f-dot-1 {
-  top: 14px;
-  left: 10px;
-}
-
-.f-dot-2 {
-  top: 12px;
-  left: 27px;
-  animation-delay: 0.18s;
-}
-
-.f-dot-3 {
+.complex-bipartite {
+  z-index: 4;
   top: 20px;
-  left: 43px;
-  background: var(--gold);
-  box-shadow: 0 0 0 4px rgba(177, 134, 63, 0.08);
-  animation-delay: 0.36s;
+  left: 13px;
+  width: 99px;
+  height: 104px;
 }
 
-.f-dot-4 {
-  top: 36px;
-  left: 8px;
-  background: var(--burgundy);
-  box-shadow: 0 0 0 4px rgba(123, 69, 81, 0.08);
-  animation-delay: 0.54s;
-}
-
-.f-dot-5 {
-  top: 35px;
-  left: 27px;
-  animation-delay: 0.72s;
-}
-
-.f-dot-6 {
-  top: 43px;
-  left: 45px;
-  background: var(--olive);
-  box-shadow: 0 0 0 4px rgba(101, 119, 68, 0.08);
-  animation-delay: 0.9s;
-}
-
-.f-dot-7 {
-  top: 59px;
-  left: 11px;
-  background: var(--gold);
-  box-shadow: 0 0 0 4px rgba(177, 134, 63, 0.08);
-  animation-delay: 1.08s;
-}
-
-.f-dot-8 {
-  top: 64px;
-  left: 29px;
-  background: var(--burgundy);
-  box-shadow: 0 0 0 4px rgba(123, 69, 81, 0.08);
-  animation-delay: 1.26s;
-}
-
-.f-dot-9 {
-  top: 58px;
-  left: 45px;
-  animation-delay: 1.44s;
-}
-
-.factor-edge {
-  z-index: 2;
-  height: 2px;
-  border-radius: 999px;
-  background: rgba(89, 100, 99, 0.24);
-  color: rgba(89, 100, 99, 0.34);
-  transform-origin: left center;
-}
-
-.factor-edge::after {
-  content: "";
+.complex-halo {
   position: absolute;
-  top: -3px;
-  right: 3px;
-  width: 0;
-  height: 0;
-  border-top: 4px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-left: 6px solid currentColor;
+  display: block;
+  top: -5px;
+  left: -4px;
+  width: 99px;
+  height: 112px;
+  border: 1px solid rgba(31, 95, 99, 0.28);
+  border-radius: 22px;
+  transform: rotate(-3deg);
+  animation: complexHalo 5.6s ease-in-out infinite;
 }
 
-.factor-input-one {
-  top: 58px;
-  left: 65px;
-  width: 46px;
-  transform: rotate(-34deg);
+.complex-node,
+.simple-node,
+.complex-edge,
+.simple-edge,
+.split-flow {
+  position: absolute;
+  display: block;
 }
 
-.factor-input-two {
-  top: 72px;
-  left: 65px;
-  width: 45px;
-}
-
-.factor-input-three {
-  top: 86px;
-  left: 65px;
-  width: 46px;
-  transform: rotate(34deg);
-}
-
-.factor-lane-one-a {
-  top: 36px;
-  left: 113px;
-  width: 35px;
-}
-
-.factor-lane-one-b {
-  top: 36px;
-  left: 150px;
-  width: 36px;
-  transform: rotate(7deg);
-}
-
-.factor-lane-two-a {
-  top: 72px;
-  left: 113px;
-  width: 35px;
-}
-
-.factor-lane-two-b {
-  top: 72px;
-  left: 150px;
-  width: 36px;
-}
-
-.factor-lane-three-a {
-  top: 107px;
-  left: 113px;
-  width: 35px;
-  transform: rotate(-7deg);
-}
-
-.factor-lane-three-b {
-  top: 102px;
-  left: 150px;
-  width: 36px;
-  transform: rotate(-14deg);
-}
-
-.factor-merge-one {
-  top: 39px;
-  left: 184px;
-  width: 40px;
-  transform: rotate(35deg);
-}
-
-.factor-merge-two {
-  top: 72px;
-  left: 184px;
-  width: 37px;
-}
-
-.factor-merge-three {
-  top: 98px;
-  left: 184px;
-  width: 40px;
-  transform: rotate(-34deg);
-}
-
-.factor-node {
-  z-index: 5;
-  width: 13px;
-  height: 13px;
+.complex-node,
+.simple-node {
+  z-index: 6;
+  width: 9px;
+  height: 9px;
   border: 2px solid var(--teal);
   border-radius: 50%;
   background: rgba(251, 252, 248, 0.98);
-  box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.05);
-  animation: factorNodeFocus 5.2s ease-in-out infinite;
+  box-shadow: 0 0 0 3px rgba(31, 95, 99, 0.05);
 }
 
-.factor-one-a {
-  top: 30px;
-  left: 105px;
-  animation-delay: 0.12s;
+.complex-node {
+  animation: complexNodePulse 5.6s ease-in-out infinite;
 }
 
-.factor-one-b {
-  top: 30px;
-  left: 144px;
-  animation-delay: 0.28s;
+.c-left-1,
+.c-right-1 {
+  top: 8px;
 }
 
-.factor-one-c {
+.c-left-2,
+.c-right-2 {
   top: 33px;
-  left: 181px;
-  animation-delay: 0.44s;
 }
 
-.factor-two-a {
-  top: 66px;
-  left: 105px;
-  border-color: var(--gold);
-  animation-delay: 0.3s;
+.c-left-3,
+.c-right-3 {
+  top: 58px;
 }
 
-.factor-two-b {
-  top: 66px;
+.c-left-4,
+.c-right-4 {
+  top: 83px;
+}
+
+.c-left-1,
+.c-left-2,
+.c-left-3,
+.c-left-4 {
+  left: 8px;
+}
+
+.c-right-1,
+.c-right-2,
+.c-right-3,
+.c-right-4 {
+  left: 74px;
+  border-color: var(--burgundy);
+}
+
+.complex-edge,
+.simple-edge {
+  z-index: 2;
+  height: 2px;
+  border-radius: 999px;
+  transform-origin: left center;
+}
+
+.complex-edge {
+  background: rgba(89, 100, 99, 0.22);
+  animation: denseEdgePulse 5.6s ease-in-out infinite;
+}
+
+.c-edge-1 {
+  top: 13px;
+  left: 17px;
+  width: 58px;
+}
+
+.c-edge-2 {
+  top: 13px;
+  left: 17px;
+  width: 62px;
+  transform: rotate(23deg);
+}
+
+.c-edge-3 {
+  top: 13px;
+  left: 17px;
+  width: 73px;
+  transform: rotate(43deg);
+}
+
+.c-edge-4 {
+  top: 38px;
+  left: 17px;
+  width: 62px;
+  transform: rotate(-23deg);
+}
+
+.c-edge-5 {
+  top: 38px;
+  left: 17px;
+  width: 58px;
+}
+
+.c-edge-6 {
+  top: 38px;
+  left: 17px;
+  width: 62px;
+  transform: rotate(23deg);
+}
+
+.c-edge-7 {
+  top: 63px;
+  left: 17px;
+  width: 73px;
+  transform: rotate(-43deg);
+}
+
+.c-edge-8 {
+  top: 63px;
+  left: 17px;
+  width: 62px;
+  transform: rotate(-23deg);
+}
+
+.c-edge-9 {
+  top: 63px;
+  left: 17px;
+  width: 58px;
+}
+
+.c-edge-10 {
+  top: 88px;
+  left: 17px;
+  width: 73px;
+  transform: rotate(-43deg);
+}
+
+.simple-bipartite {
+  z-index: 5;
   left: 144px;
-  border-color: var(--gold);
-  animation-delay: 0.46s;
+  width: 78px;
+  height: 31px;
+  border-radius: 9px;
+  animation: simpleGraphFocus 5.6s ease-in-out infinite;
 }
 
-.factor-two-c {
-  top: 66px;
-  left: 181px;
-  border-color: var(--gold);
-  animation-delay: 0.62s;
+.simple-top {
+  top: 17px;
+  color: var(--teal);
 }
 
-.factor-three-a {
-  top: 101px;
-  left: 105px;
-  border-color: var(--burgundy);
-  animation-delay: 0.48s;
+.simple-middle {
+  top: 56px;
+  color: var(--gold);
+  animation-delay: 0.35s;
 }
 
-.factor-three-b {
-  top: 97px;
-  left: 144px;
-  border-color: var(--burgundy);
-  animation-delay: 0.64s;
+.simple-bottom {
+  top: 95px;
+  color: var(--burgundy);
+  animation-delay: 0.7s;
 }
 
-.factor-three-c {
-  top: 89px;
-  left: 181px;
-  border-color: var(--burgundy);
-  animation-delay: 0.8s;
+.simple-edge {
+  background: rgba(89, 100, 99, 0.24);
+  animation: simpleEdgePulse 5.6s ease-in-out infinite;
 }
 
-.factor-decision {
-  z-index: 6;
-  top: 62px;
-  left: 210px;
-  width: 20px;
-  height: 20px;
-  border: 2px solid var(--gold);
-  border-radius: 50%;
-  background: rgba(251, 252, 248, 0.98);
-  box-shadow:
-    0 0 0 5px rgba(177, 134, 63, 0.1),
-    0 0 18px rgba(177, 134, 63, 0.26);
-  animation: factorDecisionPulse 5.2s ease-in-out infinite;
+.simple-edge-a {
+  top: 8px;
+  left: 17px;
+  width: 45px;
 }
 
-.factor-flow {
+.simple-edge-b {
+  top: 22px;
+  left: 17px;
+  width: 45px;
+}
+
+.simple-edge-c {
+  top: 8px;
+  left: 17px;
+  width: 47px;
+  transform: rotate(17deg);
+}
+
+.simple-node {
+  width: 8px;
+  height: 8px;
+  border-color: currentColor;
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 10%, transparent);
+}
+
+.simple-left-one,
+.simple-right-one {
+  top: 4px;
+}
+
+.simple-left-two,
+.simple-right-two {
+  top: 18px;
+}
+
+.simple-left-one,
+.simple-left-two {
+  left: 8px;
+}
+
+.simple-right-one,
+.simple-right-two {
+  left: 62px;
+}
+
+.split-flow {
   z-index: 7;
   width: 6px;
   height: 6px;
@@ -1841,78 +1793,88 @@ h3 {
   box-shadow: 0 0 12px rgba(31, 95, 99, 0.42);
   offset-rotate: 0deg;
   pointer-events: none;
-  animation: factorFlow 5.2s ease-in-out infinite;
+  animation: splitFlow 5.6s ease-in-out infinite;
 }
 
-.factor-flow-one {
-  offset-path: path("M 65 58 C 84 42 94 36 111 36 L 148 36 C 172 38 191 48 216 72");
+.split-flow-one {
+  offset-path: path("M 96 33 C 112 20 126 23 146 30");
 }
 
-.factor-flow-two {
+.split-flow-two {
   background: var(--gold);
   box-shadow: 0 0 12px rgba(177, 134, 63, 0.42);
-  offset-path: path("M 65 72 C 84 72 95 72 111 72 L 148 72 L 216 72");
-  animation-delay: 0.38s;
+  offset-path: path("M 96 72 C 113 72 126 72 146 72");
+  animation-delay: 0.42s;
 }
 
-.factor-flow-three {
+.split-flow-three {
   background: var(--burgundy);
   box-shadow: 0 0 12px rgba(123, 69, 81, 0.36);
-  offset-path: path("M 65 86 C 84 102 96 107 111 107 L 148 102 C 172 99 191 91 216 72");
-  animation-delay: 0.76s;
+  offset-path: path("M 96 111 C 112 124 126 120 146 108");
+  animation-delay: 0.84s;
 }
 
-@keyframes factorHalo {
+@keyframes complexHalo {
   0%,
   100% {
-    opacity: 0.34;
-    transform: rotate(-7deg) scale(0.96);
+    opacity: 0.3;
+    transform: rotate(-3deg) scale(0.96);
   }
 
   50% {
     opacity: 0.72;
-    transform: rotate(-7deg) scale(1.04);
+    transform: rotate(-3deg) scale(1.03);
   }
 }
 
-@keyframes factorDotPulse {
+@keyframes complexNodePulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 3px rgba(31, 95, 99, 0.05);
+  }
+
+  42% {
+    box-shadow: 0 0 0 5px rgba(31, 95, 99, 0.12);
+  }
+}
+
+@keyframes denseEdgePulse {
+  0%,
+  100% {
+    opacity: 0.42;
+  }
+
+  50% {
+    opacity: 0.82;
+  }
+}
+
+@keyframes simpleGraphFocus {
+  0%,
+  100% {
+    opacity: 0.86;
+  }
+
+  54%,
+  78% {
+    opacity: 1;
+  }
+}
+
+@keyframes simpleEdgePulse {
   0%,
   100% {
     opacity: 0.62;
-    transform: scale(0.94);
   }
 
-  42%,
-  68% {
-    opacity: 1;
-    transform: scale(1.14);
-  }
-}
-
-@keyframes factorNodeFocus {
-  0%,
-  100% {
-    box-shadow: 0 0 0 4px rgba(31, 95, 99, 0.05);
-  }
-
-  52% {
-    box-shadow: 0 0 0 7px rgba(31, 95, 99, 0.12);
+  58%,
+  82% {
+    opacity: 0.95;
+    background: color-mix(in srgb, currentColor 42%, rgba(89, 100, 99, 0.24));
   }
 }
 
-@keyframes factorDecisionPulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  66%,
-  84% {
-    transform: scale(1.12);
-  }
-}
-
-@keyframes factorFlow {
+@keyframes splitFlow {
   0% {
     offset-distance: 0%;
     opacity: 0;
@@ -1933,25 +1895,25 @@ h3 {
 }
 
 @supports not (offset-path: path("M 0 0 L 1 1")) {
-  .factor-flow {
+  .split-flow {
     animation: none;
     opacity: 0.82;
     transform: none;
   }
 
-  .factor-flow-one {
-    top: 33px;
-    left: 147px;
+  .split-flow-one {
+    top: 27px;
+    left: 126px;
   }
 
-  .factor-flow-two {
+  .split-flow-two {
     top: 69px;
-    left: 147px;
+    left: 126px;
   }
 
-  .factor-flow-three {
-    top: 99px;
-    left: 147px;
+  .split-flow-three {
+    top: 105px;
+    left: 126px;
   }
 }
 
@@ -2222,11 +2184,12 @@ h3 {
   .route-particle,
   .node-s0,
   .decision-node,
-  .factor-source-halo,
-  .factor-dot,
-  .factor-node,
-  .factor-decision,
-  .factor-flow {
+  .complex-halo,
+  .complex-node,
+  .complex-edge,
+  .simple-bipartite,
+  .simple-edge,
+  .split-flow {
     animation: none;
   }
 
@@ -2257,24 +2220,24 @@ h3 {
     left: 156px;
   }
 
-  .factor-flow {
+  .split-flow {
     opacity: 0.82;
     offset-path: none;
     transform: none;
   }
 
-  .factor-flow-one {
-    top: 33px;
-    left: 147px;
+  .split-flow-one {
+    top: 27px;
+    left: 126px;
   }
 
-  .factor-flow-two {
+  .split-flow-two {
     top: 69px;
-    left: 147px;
+    left: 126px;
   }
 
-  .factor-flow-three {
-    top: 99px;
-    left: 147px;
+  .split-flow-three {
+    top: 105px;
+    left: 126px;
   }
 }

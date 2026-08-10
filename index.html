@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
     <link rel="icon" href="favicon.png">
     <link rel="preload" href="research-map-v2-alpha.png" as="image">
-    <link rel="stylesheet" href="styles.css?v=20260809-factorization-visual">
+    <link rel="stylesheet" href="styles.css?v=20260809-bipartite-factorization">
   </head>
   <body>
     <main>
@@ -112,45 +112,59 @@
           <p class="authors">Chenbei Lu, Laixi Shi, Zaiwei Chen, Chenye Wu, and Adam Wierman</p>
           <a class="paper-link" href="https://openreview.net/pdf?id=aEsIW59zDm">PDF</a>
         </div>
-        <div class="paper-visual factorization-visual" role="img" aria-label="Animated schematic of a high-dimensional state graph splitting into lower-dimensional factors and recombining for decision-making">
+        <div class="paper-visual factorization-visual" role="img" aria-label="Animated schematic of a dense bipartite graph splitting into three simple bipartite graphs">
         <div class="visual-grid" aria-hidden="true"></div>
-        <div class="factor-source" aria-hidden="true">
-          <span class="factor-source-halo"></span>
-          <span class="factor-dot f-dot-1"></span>
-          <span class="factor-dot f-dot-2"></span>
-          <span class="factor-dot f-dot-3"></span>
-          <span class="factor-dot f-dot-4"></span>
-          <span class="factor-dot f-dot-5"></span>
-          <span class="factor-dot f-dot-6"></span>
-          <span class="factor-dot f-dot-7"></span>
-          <span class="factor-dot f-dot-8"></span>
-          <span class="factor-dot f-dot-9"></span>
+        <div class="complex-bipartite" aria-hidden="true">
+          <span class="complex-halo"></span>
+          <span class="complex-edge c-edge-1"></span>
+          <span class="complex-edge c-edge-2"></span>
+          <span class="complex-edge c-edge-3"></span>
+          <span class="complex-edge c-edge-4"></span>
+          <span class="complex-edge c-edge-5"></span>
+          <span class="complex-edge c-edge-6"></span>
+          <span class="complex-edge c-edge-7"></span>
+          <span class="complex-edge c-edge-8"></span>
+          <span class="complex-edge c-edge-9"></span>
+          <span class="complex-edge c-edge-10"></span>
+          <span class="complex-node c-left-1"></span>
+          <span class="complex-node c-left-2"></span>
+          <span class="complex-node c-left-3"></span>
+          <span class="complex-node c-left-4"></span>
+          <span class="complex-node c-right-1"></span>
+          <span class="complex-node c-right-2"></span>
+          <span class="complex-node c-right-3"></span>
+          <span class="complex-node c-right-4"></span>
         </div>
-        <span class="factor-edge factor-input-one" aria-hidden="true"></span>
-        <span class="factor-edge factor-input-two" aria-hidden="true"></span>
-        <span class="factor-edge factor-input-three" aria-hidden="true"></span>
-        <span class="factor-edge factor-lane-one-a" aria-hidden="true"></span>
-        <span class="factor-edge factor-lane-one-b" aria-hidden="true"></span>
-        <span class="factor-edge factor-lane-two-a" aria-hidden="true"></span>
-        <span class="factor-edge factor-lane-two-b" aria-hidden="true"></span>
-        <span class="factor-edge factor-lane-three-a" aria-hidden="true"></span>
-        <span class="factor-edge factor-lane-three-b" aria-hidden="true"></span>
-        <span class="factor-edge factor-merge-one" aria-hidden="true"></span>
-        <span class="factor-edge factor-merge-two" aria-hidden="true"></span>
-        <span class="factor-edge factor-merge-three" aria-hidden="true"></span>
-        <span class="factor-flow factor-flow-one" aria-hidden="true"></span>
-        <span class="factor-flow factor-flow-two" aria-hidden="true"></span>
-        <span class="factor-flow factor-flow-three" aria-hidden="true"></span>
-        <span class="factor-node factor-one-a" aria-hidden="true"></span>
-        <span class="factor-node factor-one-b" aria-hidden="true"></span>
-        <span class="factor-node factor-one-c" aria-hidden="true"></span>
-        <span class="factor-node factor-two-a" aria-hidden="true"></span>
-        <span class="factor-node factor-two-b" aria-hidden="true"></span>
-        <span class="factor-node factor-two-c" aria-hidden="true"></span>
-        <span class="factor-node factor-three-a" aria-hidden="true"></span>
-        <span class="factor-node factor-three-b" aria-hidden="true"></span>
-        <span class="factor-node factor-three-c" aria-hidden="true"></span>
-        <span class="factor-decision" aria-hidden="true"></span>
+        <span class="split-flow split-flow-one" aria-hidden="true"></span>
+        <span class="split-flow split-flow-two" aria-hidden="true"></span>
+        <span class="split-flow split-flow-three" aria-hidden="true"></span>
+        <div class="simple-bipartite simple-top" aria-hidden="true">
+          <span class="simple-edge simple-edge-a"></span>
+          <span class="simple-edge simple-edge-b"></span>
+          <span class="simple-edge simple-edge-c"></span>
+          <span class="simple-node simple-left-one"></span>
+          <span class="simple-node simple-left-two"></span>
+          <span class="simple-node simple-right-one"></span>
+          <span class="simple-node simple-right-two"></span>
+        </div>
+        <div class="simple-bipartite simple-middle" aria-hidden="true">
+          <span class="simple-edge simple-edge-a"></span>
+          <span class="simple-edge simple-edge-b"></span>
+          <span class="simple-edge simple-edge-c"></span>
+          <span class="simple-node simple-left-one"></span>
+          <span class="simple-node simple-left-two"></span>
+          <span class="simple-node simple-right-one"></span>
+          <span class="simple-node simple-right-two"></span>
+        </div>
+        <div class="simple-bipartite simple-bottom" aria-hidden="true">
+          <span class="simple-edge simple-edge-a"></span>
+          <span class="simple-edge simple-edge-b"></span>
+          <span class="simple-edge simple-edge-c"></span>
+          <span class="simple-node simple-left-one"></span>
+          <span class="simple-node simple-left-two"></span>
+          <span class="simple-node simple-right-one"></span>
+          <span class="simple-node simple-right-two"></span>
+        </div>
       </div>
       </article><article class="publication-card">
         <div class="venue">IEEE Transactions on Smart Grid</div>

@@ -114,6 +114,7 @@ main {
 .about-copy a:hover,
 .section-subtle-link:hover,
 .paper-link:hover,
+.news-copy a:hover,
 .contact-links a:hover,
 .profile-link:hover {
   color: var(--accent-dark);
@@ -493,6 +494,14 @@ h3 {
 .news-prefix {
   color: var(--news-highlight);
   font-weight: 720;
+}
+
+.news-copy a {
+  color: var(--news-highlight);
+  font-weight: 620;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .news-copy p {

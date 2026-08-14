@@ -110,6 +110,7 @@ main {
 
 .nav-links a:hover,
 .about-copy a:hover,
+.section-subtle-link:hover,
 .paper-link:hover,
 .contact-links a:hover,
 .profile-link:hover {
@@ -292,6 +293,17 @@ h3 {
 
 .section-heading {
   margin-bottom: 22px;
+}
+
+.section-subtle-link {
+  display: inline-flex;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .research-heading {

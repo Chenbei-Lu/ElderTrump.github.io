@@ -278,25 +278,6 @@ h3 {
   text-underline-offset: 3px;
 }
 
-.profile-strip {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 30px;
-}
-
-.profile-strip div {
-  min-height: 92px;
-  padding: 18px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface-soft);
-  color: var(--ink);
-  font-size: 0.98rem;
-  line-height: 1.48;
-}
-
-.profile-strip span,
 .venue,
 .pillar-card span,
 .timeline-item span {
@@ -307,10 +288,6 @@ h3 {
   font-weight: 700;
   line-height: 1.45;
   text-transform: uppercase;
-}
-
-.profile-strip span {
-  margin-bottom: 10px;
 }
 
 .section-heading {
@@ -535,7 +512,6 @@ h3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .profile-strip,
   .research-heading,
   .two-column,
   .news-service-grid,

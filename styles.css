@@ -112,6 +112,7 @@ main {
 .about-copy a:hover,
 .section-subtle-link:hover,
 .paper-link:hover,
+.news-prefix:hover,
 .contact-links a:hover,
 .profile-link:hover {
   color: var(--accent-dark);
@@ -482,29 +483,17 @@ h3 {
 
 .news-copy {
   display: grid;
-  gap: 4px;
 }
 
-.news-copy small {
+.news-prefix {
   color: var(--accent-dark);
-  font-family: var(--font-geist-mono), ui-monospace, monospace;
-  font-size: 0.68rem;
-  font-weight: 700;
-  line-height: 1.35;
-  text-transform: uppercase;
-}
-
-.news-copy h3 {
-  color: var(--ink);
-  font-size: 0.98rem;
   font-weight: 680;
-  line-height: 1.38;
 }
 
 .news-copy p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.91rem;
+  font-size: 0.9rem;
   line-height: 1.55;
 }
 

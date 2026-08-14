@@ -13,6 +13,8 @@
   --line: #e2e5df;
   --accent: #b47a3c;
   --accent-dark: #835628;
+  --news-highlight: #c95722;
+  --news-highlight-hover: #a93e20;
   --navy: #233348;
 }
 
@@ -112,10 +114,13 @@ main {
 .about-copy a:hover,
 .section-subtle-link:hover,
 .paper-link:hover,
-.news-prefix:hover,
 .contact-links a:hover,
 .profile-link:hover {
   color: var(--accent-dark);
+}
+
+.news-prefix:hover {
+  color: var(--news-highlight-hover);
 }
 
 .academic-layout {
@@ -486,8 +491,8 @@ h3 {
 }
 
 .news-prefix {
-  color: var(--accent-dark);
-  font-weight: 680;
+  color: var(--news-highlight);
+  font-weight: 720;
 }
 
 .news-copy p {

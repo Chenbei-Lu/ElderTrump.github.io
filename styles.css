@@ -489,11 +489,15 @@ h3 {
 
 .news-copy {
   display: grid;
+  gap: 4px;
 }
 
 .news-prefix {
+  display: block;
   color: var(--news-highlight);
+  font-size: 0.78rem;
   font-weight: 720;
+  line-height: 1.35;
 }
 
 .news-copy a {

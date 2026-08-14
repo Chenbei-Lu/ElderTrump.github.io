@@ -158,15 +158,33 @@ main {
 }
 
 .profile-role {
+  display: grid;
+  gap: 2px;
   margin: 16px 0 0;
-  color: var(--accent-dark);
-  font-size: 1.02rem;
-  line-height: 1.42;
-  font-weight: 620;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.34;
+  font-weight: 560;
 }
 
 .profile-role span {
   display: block;
+}
+
+.profile-role span:nth-child(-n + 2) {
+  color: var(--navy);
+  font-size: 1rem;
+  font-weight: 690;
+}
+
+.profile-role span:nth-child(3) {
+  margin-top: 8px;
+  color: var(--accent-dark);
+  font-weight: 650;
+}
+
+.profile-role span:nth-child(4) {
+  color: var(--muted);
 }
 
 .profile-location {

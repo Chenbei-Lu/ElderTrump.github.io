@@ -135,9 +135,9 @@ main {
 }
 
 .profile-avatar {
-  width: 78px;
-  height: 78px;
-  margin-bottom: 22px;
+  width: 92px;
+  height: 92px;
+  margin: 0 auto 24px;
   border: 1px solid var(--line);
 }
 

@@ -493,7 +493,12 @@ h3 {
 }
 
 .news-prefix {
-  display: block;
+  display: inline-flex;
+  width: fit-content;
+  padding: 2px 7px;
+  border: 1px solid color-mix(in srgb, var(--news-highlight) 24%, transparent);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--news-highlight) 10%, transparent);
   color: var(--news-highlight);
   font-size: 0.78rem;
   font-weight: 720;

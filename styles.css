@@ -257,14 +257,6 @@ h3 {
   color: var(--ink);
 }
 
-.intro-statement {
-  margin: 20px 0 0;
-  max-width: 850px;
-  color: var(--ink);
-  font-size: 1.16rem;
-  line-height: 1.72;
-}
-
 .about-copy {
   display: grid;
   gap: 14px;
@@ -325,34 +317,50 @@ h3 {
   margin-bottom: 22px;
 }
 
+.research-heading {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.research-statement {
+  margin: 0;
+  max-width: 720px;
+  color: var(--ink);
+  font-size: 1.06rem;
+  line-height: 1.62;
+}
+
 .pillar-grid {
   display: grid;
-  gap: 14px;
+  gap: 0;
+  border-top: 1px solid var(--line);
 }
 
 .pillar-card {
   display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  gap: 18px;
-  padding: 20px 0;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 16px;
+  padding: 16px 0;
   border-top: 1px solid var(--line);
 }
 
 .pillar-card:first-child {
   border-top: 0;
-  padding-top: 0;
 }
 
 .pillar-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.04rem;
   line-height: 1.35;
 }
 
 .pillar-card p {
-  margin: 8px 0 0;
+  margin: 6px 0 0;
   color: var(--muted);
-  font-size: 0.99rem;
-  line-height: 1.68;
+  font-size: 0.98rem;
+  line-height: 1.56;
 }
 
 .publication-list {
@@ -528,6 +536,7 @@ h3 {
   }
 
   .profile-strip,
+  .research-heading,
   .two-column,
   .news-service-grid,
   .contact-inner {

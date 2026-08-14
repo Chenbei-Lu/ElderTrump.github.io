@@ -501,11 +501,17 @@ h3 {
 }
 
 .news-copy a {
-  color: var(--news-highlight);
-  font-weight: 620;
+  color: inherit;
+  font-weight: inherit;
   text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--ink) 34%, transparent);
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
+}
+
+.news-copy a:hover {
+  color: inherit;
+  text-decoration-color: var(--ink);
 }
 
 .news-copy p {

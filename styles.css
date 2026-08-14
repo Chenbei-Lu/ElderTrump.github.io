@@ -404,13 +404,12 @@ h3 {
 }
 
 .teaching-list,
-.news-service-grid {
+.service-list {
   display: grid;
   gap: 22px;
 }
 
-.teaching-group h3,
-.service-panel h3 {
+.teaching-group h3 {
   font-size: 1.06rem;
   line-height: 1.35;
 }
@@ -434,40 +433,47 @@ h3 {
   background: var(--accent);
 }
 
-.news-service-grid {
-  grid-template-columns: 0.8fr 1.2fr;
-  align-items: start;
-}
-
 .timeline {
   display: grid;
-  gap: 12px;
+  gap: 0;
+  border-top: 1px solid var(--line);
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 58px minmax(0, 1fr);
-  gap: 14px;
-  padding-bottom: 12px;
+  grid-template-columns: 116px minmax(0, 1fr);
+  gap: 18px;
+  padding: 14px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .timeline-item p,
-.service-panel p {
+.service-item {
   margin: 0;
   color: var(--muted);
   line-height: 1.65;
 }
 
-.service-panel {
-  padding: 18px 20px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
+.service-list {
+  gap: 0;
+  border-top: 1px solid var(--line);
 }
 
-.service-panel p {
-  margin-top: 12px;
+.service-item {
+  position: relative;
+  padding: 14px 0 14px 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-item::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .contact-section {
@@ -526,7 +532,6 @@ h3 {
 
   .research-heading,
   .two-column,
-  .news-service-grid,
   .contact-inner {
     grid-template-columns: 1fr;
   }

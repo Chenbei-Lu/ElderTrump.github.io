@@ -10,336 +10,157 @@
     <meta property="og:type" content="website">
     <link rel="icon" href="site-avatar.png?v=20260810-cat-avatar-centered">
     <link rel="apple-touch-icon" href="site-avatar.png?v=20260810-cat-avatar-centered">
-    <link rel="preload" href="research-map-v2-alpha.png" as="image">
-    <link rel="stylesheet" href="styles.css?v=20260810-teaching-courses">
+    <link rel="stylesheet" href="styles.css?v=20260814-clean-layout">
   </head>
   <body>
     <main>
       <header class="site-header" aria-label="Primary navigation">
         <div class="page-width header-inner">
-          <a class="brand" href="#top" aria-label="Chenbei Lu homepage"><span class="brand-avatar" aria-hidden="true" style="background-image:url(site-avatar.png?v=20260810-cat-avatar-centered)"></span></a>
+          <a class="brand" href="#about" aria-label="Chenbei Lu homepage"><span class="brand-avatar" aria-hidden="true" style="background-image:url(site-avatar.png?v=20260810-cat-avatar-centered)"></span><span class="brand-name">Chenbei Lu</span></a>
           <nav class="nav-links"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#service">Service</a><a href="#contact">Contact</a></nav>
         </div>
       </header>
 
-      <section class="hero" id="top">
-        <img class="hero-map" src="research-map-v2-alpha.png" alt="" aria-hidden="true">
-        <div class="page-width hero-inner">
-          <p class="eyebrow">Learning, optimization, control, and energy systems</p>
+      <div class="page-width academic-layout" id="about">
+        <aside class="profile-card" aria-label="Profile summary">
+          <span class="profile-avatar" aria-hidden="true" style="background-image:url(site-avatar.png?v=20260810-cat-avatar-centered)"></span>
           <h1>Chenbei Lu</h1>
-          <p class="hero-role">Eric and Wendy Schmidt AI Postdoctoral Fellow, AI for Science Institute, Cornell University</p>
-          <p class="hero-copy">My research develops theoretical and algorithmic foundations for reliable sequential decision-making under uncertainty, with applications in energy systems and AI infrastructure.</p>
-          <div class="hero-actions" aria-label="Profile links"><a class="button primary" href="mailto:chenbei.lu@cornell.edu">Email</a><a class="button secondary" href="#publications">Publications</a><a class="button secondary" href="https://scholar.google.com/citations?hl=en&amp;user=Td_ZxvEAAAAJ">Google Scholar</a></div>
-          <div class="profile-strip" aria-label="Profile summary"><div><span>Current</span>AI for Science Institute, Cornell University</div><div><span>Methods</span>Reinforcement learning · stochastic optimization</div><div><span>Systems</span>Power systems · storage · AI data centers</div></div>
-        </div>
-      </section>
+          <p class="profile-role">Eric and Wendy Schmidt AI Postdoctoral Fellow, AI for Science Institute, Cornell University</p>
+          <p class="profile-location">Ithaca, NY</p>
+          <div class="profile-actions" aria-label="Profile links"><a class="profile-link primary" href="mailto:chenbei.lu@cornell.edu">Email</a><a class="profile-link secondary" href="#publications">Publications</a><a class="profile-link secondary" href="https://scholar.google.com/citations?hl=en&amp;user=Td_ZxvEAAAAJ">Google Scholar</a></div>
+          <section class="keyword-panel" aria-label="Research keywords">
+            <h2>Research Interests</h2>
+            <ul><li>Reinforcement learning</li><li>Stochastic optimization</li><li>Sequential decision-making</li><li>Energy systems</li><li>AI infrastructure</li></ul>
+          </section>
+        </aside>
 
-      <section class="section page-width intro-grid" id="about">
-        <div>
-          <p class="section-kicker">About me</p>
-          <h2>Postdoctoral fellow at the AI for Science Institute.</h2>
-        </div>
-        <div class="about-copy"><p>I am an Eric and Wendy Schmidt AI Postdoctoral Fellow at the AI for Science Institute, Cornell University, working with Prof. <a href="https://www.peese.org/professor/" target="_blank" rel="noreferrer">Fengqi You</a>. My research develops structure-aware reinforcement learning, stochastic optimization, and safe control methods for large-scale energy and AI infrastructure.</p><p>Before joining Cornell, I received my Ph.D. in Computer Science from the Institute for Interdisciplinary Information Sciences at Tsinghua University in 2025, advised by Prof. <a href="http://www.wuchenye.cn/" target="_blank" rel="noreferrer">Chenye Wu</a> and Prof. <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target="_blank" rel="noreferrer">Ran Duan</a>. I was also a visiting student researcher in Computing and Mathematical Sciences at Caltech, advised by Prof. <a href="https://adamwierman.com/" target="_blank" rel="noreferrer">Adam Wierman</a>. I received my bachelor's degree in Computer Software Engineering from Huazhong University of Science and Technology in 2020.</p></div>
-      </section>
+        <div class="content-column">
+          <section class="intro-section">
+            <p class="section-kicker">About me</p>
+            <h2>Postdoctoral fellow at the AI for Science Institute.</h2>
+            <p class="intro-statement">My research develops theoretical and algorithmic foundations for reliable sequential decision-making under uncertainty, with applications in energy systems and AI infrastructure.</p>
+            <div class="about-copy"><p>I am an Eric and Wendy Schmidt AI Postdoctoral Fellow at the AI for Science Institute, Cornell University, working with Prof. <a href="https://www.peese.org/professor/" target="_blank" rel="noreferrer">Fengqi You</a>. My research develops structure-aware reinforcement learning, stochastic optimization, and safe control methods for large-scale energy and AI infrastructure.</p><p>Before joining Cornell, I received my Ph.D. in Computer Science from the Institute for Interdisciplinary Information Sciences at Tsinghua University in 2025, advised by Prof. <a href="http://www.wuchenye.cn/" target="_blank" rel="noreferrer">Chenye Wu</a> and Prof. <a href="https://iiis.tsinghua.edu.cn/en/People/Faculty/DuanRan.htm" target="_blank" rel="noreferrer">Ran Duan</a>. I was also a visiting student researcher in Computing and Mathematical Sciences at Caltech, advised by Prof. <a href="https://adamwierman.com/" target="_blank" rel="noreferrer">Adam Wierman</a>. I received my bachelor's degree in Computer Software Engineering from Huazhong University of Science and Technology in 2020.</p></div>
+            <div class="profile-strip" aria-label="Profile summary"><div><span>Current</span>AI for Science Institute, Cornell University</div><div><span>Methods</span>Reinforcement learning · stochastic optimization</div><div><span>Systems</span>Power systems · storage · AI data centers</div></div>
+          </section>
 
-      <section class="section page-width" id="research">
-        <div class="section-heading">
-          <p class="section-kicker">Research areas</p>
-          <h2>Sequential decision-making under structure and uncertainty.</h2>
-        </div>
-        <div class="pillar-grid"><article class="pillar-card">
+          <section class="content-section" id="research">
+            <div class="section-heading">
+              <p class="section-kicker">Research areas</p>
+              <h2>Sequential decision-making under structure and uncertainty.</h2>
+            </div>
+            <div class="pillar-grid"><article class="pillar-card">
         <span>01</span>
-        <h3>Sequential decision-making: theory and algorithms</h3>
-        <p>Theory and algorithms for reinforcement learning and stochastic optimization under structural information such as predictions, factorization, and constraints.</p>
+        <div>
+          <h3>Sequential decision-making: theory and algorithms</h3>
+          <p>Theory and algorithms for reinforcement learning and stochastic optimization under structural information such as predictions, factorization, and constraints.</p>
+        </div>
       </article><article class="pillar-card">
         <span>02</span>
-        <h3>Learning and optimization for energy systems</h3>
-        <p>Application-driven learning, optimization, and control methods for power-system operation, storage control, dispatch, unit commitment, and demand flexibility.</p>
+        <div>
+          <h3>Learning and optimization for energy systems</h3>
+          <p>Application-driven learning, optimization, and control methods for power-system operation, storage control, dispatch, unit commitment, and demand flexibility.</p>
+        </div>
       </article><article class="pillar-card">
         <span>03</span>
-        <h3>Energy and AI infrastructure</h3>
-        <p>Models and optimization frameworks for AI data centers, regional power systems, supply headroom, and emerging infrastructure planning questions.</p>
-      </article></div>
-      </section>
-
-      <section class="section page-width" id="publications">
-        <div class="section-heading">
-          <p class="section-kicker">Selected publications</p>
-          <h2>Selected papers.</h2>
+        <div>
+          <h3>Energy and AI infrastructure</h3>
+          <p>Models and optimization frameworks for AI data centers, regional power systems, supply headroom, and emerging infrastructure planning questions.</p>
         </div>
-        <div class="publication-list"><article class="publication-card publication-card-visualized">
+      </article></div>
+          </section>
+
+          <section class="content-section" id="publications">
+            <div class="section-heading">
+              <p class="section-kicker">Selected publications</p>
+              <h2>Selected papers.</h2>
+            </div>
+            <div class="publication-list"><article class="publication-card">
         <div class="venue">NeurIPS 2025, Spotlight</div>
         <div class="publication-main">
           <h3>Reinforcement Learning with Imperfect Transition Predictions: A Bellman-Jensen Approach</h3>
           <p class="authors">Chenbei Lu, Zaiwei Chen, Tongxin Li, Chenye Wu, and Adam Wierman</p>
           <a class="paper-link" href="https://arxiv.org/pdf/2510.18687">PDF</a>
         </div>
-        <div class="paper-visual mdp-visual" role="img" aria-label="Animated schematic of a prediction signal entering an MDP graph and highlighting a decision path">
-        <div class="visual-grid" aria-hidden="true"></div>
-        <div class="prediction-source" aria-hidden="true">
-          <span class="source-orbit orbit-one"></span>
-          <span class="source-orbit orbit-two"></span>
-          <span class="source-dot source-one"></span>
-          <span class="source-dot source-two"></span>
-          <span class="source-dot source-three"></span>
-        </div>
-        <span class="prediction-particle flow-one" aria-hidden="true"></span>
-        <span class="prediction-particle flow-two" aria-hidden="true"></span>
-        <span class="prediction-particle flow-three" aria-hidden="true"></span>
-        <div class="mdp-graph" aria-hidden="true">
-          <span class="mdp-edge edge-s0-s1"></span>
-          <span class="mdp-edge edge-s0-s2"></span>
-          <span class="mdp-edge edge-s1-s3"></span>
-          <span class="mdp-edge edge-s2-s4"></span>
-          <span class="mdp-edge edge-s3-d"></span>
-          <span class="mdp-edge edge-s4-d"></span>
-          <span class="mdp-edge edge-s1-s2"></span>
-          <span class="route-edge route-s0-s1"></span>
-          <span class="route-edge route-s1-s3"></span>
-          <span class="route-edge route-s3-d"></span>
-          <span class="route-particle"></span>
-          <span class="mdp-node node-s0"></span>
-          <span class="mdp-node node-s1"></span>
-          <span class="mdp-node node-s2"></span>
-          <span class="mdp-node node-s3"></span>
-          <span class="mdp-node node-s4"></span>
-          <span class="mdp-node decision-node"></span>
-        </div>
-      </div>
-      </article><article class="publication-card publication-card-visualized">
+      </article><article class="publication-card">
         <div class="venue">ICML 2025</div>
         <div class="publication-main">
           <h3>Overcoming the Curse of Dimensionality in Reinforcement Learning Through Approximate Factorization</h3>
           <p class="authors">Chenbei Lu, Laixi Shi, Zaiwei Chen, Chenye Wu, and Adam Wierman</p>
           <a class="paper-link" href="https://openreview.net/pdf?id=aEsIW59zDm">PDF</a>
         </div>
-        <div class="paper-visual factorization-visual" role="img" aria-label="Animated schematic of a dense bipartite graph splitting into three simple bipartite graphs">
-        <div class="visual-grid" aria-hidden="true"></div>
-        <div class="complex-bipartite" aria-hidden="true">
-          <span class="complex-halo"></span>
-          <span class="complex-edge c-edge-1"></span>
-          <span class="complex-edge c-edge-2"></span>
-          <span class="complex-edge c-edge-3"></span>
-          <span class="complex-edge c-edge-4"></span>
-          <span class="complex-edge c-edge-5"></span>
-          <span class="complex-edge c-edge-6"></span>
-          <span class="complex-edge c-edge-7"></span>
-          <span class="complex-edge c-edge-8"></span>
-          <span class="complex-edge c-edge-9"></span>
-          <span class="complex-edge c-edge-10"></span>
-          <span class="complex-node c-left-1"></span>
-          <span class="complex-node c-left-2"></span>
-          <span class="complex-node c-left-3"></span>
-          <span class="complex-node c-left-4"></span>
-          <span class="complex-node c-right-1"></span>
-          <span class="complex-node c-right-2"></span>
-          <span class="complex-node c-right-3"></span>
-          <span class="complex-node c-right-4"></span>
-        </div>
-        <span class="split-flow split-flow-one" aria-hidden="true"></span>
-        <span class="split-flow split-flow-two" aria-hidden="true"></span>
-        <span class="split-flow split-flow-three" aria-hidden="true"></span>
-        <div class="simple-bipartite simple-top" aria-hidden="true">
-          <span class="simple-edge simple-edge-a"></span>
-          <span class="simple-edge simple-edge-b"></span>
-          <span class="simple-edge simple-edge-c"></span>
-          <span class="simple-node simple-left-one"></span>
-          <span class="simple-node simple-left-two"></span>
-          <span class="simple-node simple-right-one"></span>
-          <span class="simple-node simple-right-two"></span>
-        </div>
-        <div class="simple-bipartite simple-middle" aria-hidden="true">
-          <span class="simple-edge simple-edge-a"></span>
-          <span class="simple-edge simple-edge-b"></span>
-          <span class="simple-edge simple-edge-c"></span>
-          <span class="simple-node simple-left-one"></span>
-          <span class="simple-node simple-left-two"></span>
-          <span class="simple-node simple-right-one"></span>
-          <span class="simple-node simple-right-two"></span>
-        </div>
-        <div class="simple-bipartite simple-bottom" aria-hidden="true">
-          <span class="simple-edge simple-edge-a"></span>
-          <span class="simple-edge simple-edge-b"></span>
-          <span class="simple-edge simple-edge-c"></span>
-          <span class="simple-node simple-left-one"></span>
-          <span class="simple-node simple-left-two"></span>
-          <span class="simple-node simple-right-one"></span>
-          <span class="simple-node simple-right-two"></span>
-        </div>
-      </div>
-      </article><article class="publication-card publication-card-visualized">
+      </article><article class="publication-card">
         <div class="venue">IEEE Transactions on Smart Grid</div>
         <div class="publication-main">
           <h3>Self-Improving Online Storage Control for Stable Wind Power Commitment</h3>
           <p class="authors">Chenbei Lu, Hongyu Yi, Jiahao Zhang, and Chenye Wu</p>
           <a class="paper-link" href="https://eldertrump.github.io/files/Self-Improving_Online_Storage_Control_for_Stable_Wind_Power_Commitment.pdf">PDF</a>
         </div>
-        <div class="paper-visual storage-visual" role="img" aria-label="Animated schematic inspired by the storage-control paper: variable wind buffered by storage into stable power commitment with online improvement">
-        <div class="visual-grid" aria-hidden="true"></div>
-        <div class="wind-profile" aria-hidden="true">
-          <span class="wind-bar wind-bar-1"></span>
-          <span class="wind-bar wind-bar-2"></span>
-          <span class="wind-bar wind-bar-3"></span>
-          <span class="wind-bar wind-bar-4"></span>
-          <span class="wind-bar wind-bar-5"></span>
-          <span class="wind-bar wind-bar-6"></span>
-          <span class="wind-bar wind-bar-7"></span>
-        </div>
-        <span class="storage-particle storage-particle-in" aria-hidden="true"></span>
-        <span class="storage-particle storage-particle-out" aria-hidden="true"></span>
-        <div class="storage-core" aria-hidden="true">
-          <span class="storage-orbit storage-orbit-one"></span>
-          <span class="storage-orbit storage-orbit-two"></span>
-          <span class="battery-shell">
-            <span class="battery-level"></span>
-          </span>
-        </div>
-        <div class="commitment-track" aria-hidden="true">
-          <span class="commitment-wave wave-one"></span>
-          <span class="commitment-wave wave-two"></span>
-          <span class="commitment-line"></span>
-          <span class="commitment-node commit-one"></span>
-          <span class="commitment-node commit-two"></span>
-          <span class="commitment-node commit-three"></span>
-        </div>
-        <div class="improvement-loop" aria-hidden="true">
-          <span class="loop-arc loop-arc-one"></span>
-          <span class="loop-arc loop-arc-two"></span>
-          <span class="loop-dot loop-dot-one"></span>
-          <span class="loop-dot loop-dot-two"></span>
-          <span class="loop-dot loop-dot-three"></span>
-        </div>
-      </div>
-      </article><article class="publication-card publication-card-visualized">
+      </article><article class="publication-card">
         <div class="venue">IEEE Transactions on Power Systems</div>
         <div class="publication-main">
           <h3>Sample-Adaptive Robust Economic Dispatch with Statistical Guarantees</h3>
           <p class="authors">Chenbei Lu, Nan Gu, Wenqian Jiang, and Chenye Wu</p>
           <a class="paper-link" href="https://eldertrump.github.io/files/Sample-Adaptive_Robust_Economic_Dispatch_With_Statistically_Feasible_Guarantees%20(1).pdf">PDF</a>
         </div>
-        <div class="paper-visual dispatch-visual" role="img" aria-label="Animated schematic inspired by the robust economic dispatch paper: samples forming a statistically feasible uncertainty set and dispatch decision">
-        <div class="visual-grid" aria-hidden="true"></div>
-        <div class="sample-cloud" aria-hidden="true">
-          <span class="sample-dot sample-1"></span>
-          <span class="sample-dot sample-2"></span>
-          <span class="sample-dot sample-3"></span>
-          <span class="sample-dot sample-4"></span>
-          <span class="sample-dot sample-5"></span>
-          <span class="sample-dot sample-6"></span>
-          <span class="sample-dot sample-7"></span>
-          <span class="sample-dot sample-8"></span>
-          <span class="sample-dot sample-9"></span>
-          <span class="sample-dot sample-10"></span>
-          <span class="sample-dot sample-11"></span>
-          <span class="sample-dot sample-12"></span>
-        </div>
-        <span class="dispatch-flow dispatch-flow-one" aria-hidden="true"></span>
-        <span class="dispatch-flow dispatch-flow-two" aria-hidden="true"></span>
-        <div class="uncertainty-set" aria-hidden="true">
-          <span class="uncertainty-ring ring-outer"></span>
-          <span class="uncertainty-ring ring-inner"></span>
-          <span class="uncertainty-core"></span>
-        </div>
-        <div class="dispatch-decision" aria-hidden="true">
-          <span class="dispatch-bar dispatch-bar-one"></span>
-          <span class="dispatch-bar dispatch-bar-two"></span>
-          <span class="dispatch-bar dispatch-bar-three"></span>
-          <span class="dispatch-baseline"></span>
-          <span class="risk-band"></span>
-        </div>
-      </div>
-      </article><article class="publication-card publication-card-visualized">
+      </article><article class="publication-card">
         <div class="venue">IEEE Control Systems Letters</div>
         <div class="publication-main">
           <h3>On the Optimal Deterministic Policy Learning in Chance-Constrained Markov Decision Processes</h3>
           <p class="authors">Hongyu Yi*, Chenbei Lu*, and Chenye Wu</p>
           <a class="paper-link" href="https://ieeexplore.ieee.org/abstract/document/11165110">PDF</a>
         </div>
-        <div class="paper-visual chance-visual" role="img" aria-label="Animated schematic inspired by the chance-constrained MDP paper: deterministic policy selection inside a probabilistic safety constraint">
-        <div class="visual-grid" aria-hidden="true"></div>
-        <div class="cc-policy-graph" aria-hidden="true">
-          <span class="cc-edge cc-edge-one"></span>
-          <span class="cc-edge cc-edge-two"></span>
-          <span class="cc-edge cc-edge-three"></span>
-          <span class="cc-edge cc-edge-four"></span>
-          <span class="cc-edge cc-policy-edge cc-policy-edge-one"></span>
-          <span class="cc-edge cc-policy-edge cc-policy-edge-two"></span>
-          <span class="cc-state cc-state-one"></span>
-          <span class="cc-state cc-state-two"></span>
-          <span class="cc-state cc-state-three"></span>
-          <span class="cc-state cc-state-four"></span>
-          <span class="cc-action-choice cc-choice-one"></span>
-          <span class="cc-action-choice cc-choice-two"></span>
-        </div>
-        <span class="cc-flow-dot cc-flow-dot-one" aria-hidden="true"></span>
-        <span class="cc-flow-dot cc-flow-dot-two" aria-hidden="true"></span>
-        <div class="chance-gate" aria-hidden="true">
-          <span class="gate-ring gate-ring-outer"></span>
-          <span class="gate-ring gate-ring-inner"></span>
-          <span class="gate-shield"></span>
-          <span class="gate-threshold"></span>
-        </div>
-        <div class="feasible-map" aria-hidden="true">
-          <span class="feasible-region"></span>
-          <span class="constraint-boundary"></span>
-          <span class="candidate-dot candidate-one"></span>
-          <span class="candidate-dot candidate-two"></span>
-          <span class="candidate-dot candidate-three"></span>
-          <span class="candidate-dot chosen-policy"></span>
-          <span class="unsafe-dot unsafe-one"></span>
-          <span class="unsafe-dot unsafe-two"></span>
-        </div>
-      </div>
       </article></div>
-      </section>
+          </section>
 
-      <section class="section page-width two-column" id="teaching">
-        <div>
-          <p class="section-kicker">Teaching</p>
-          <h2>Guest lectures and teaching assistance.</h2>
-        </div>
-        <div class="teaching-list"><section class="teaching-group">
+          <section class="content-section two-column" id="teaching">
+            <div>
+              <p class="section-kicker">Teaching</p>
+              <h2>Guest lectures and teaching assistance.</h2>
+            </div>
+            <div class="teaching-list"><section class="teaching-group">
         <h3>Guest lectures</h3>
         <ul><li>Fall 2025: AI for Science, Cornell University</li><li>Fall 2025: AI for Energy Systems, Cornell University</li><li>Spring 2026: Deep Learning, Cornell University</li></ul>
       </section><section class="teaching-group">
         <h3>Teaching assistance</h3>
         <ul><li>Fall 2021: Combinatorial Mathematics, Tsinghua University</li><li>Fall 2022: AI Research Practice, Yao Class, Tsinghua University</li></ul>
       </section></div>
-      </section>
+          </section>
 
-      <section class="section page-width service-section" id="service">
-        <div class="section-heading service-heading">
-          <p class="section-kicker">News</p>
-          <h2>Updates.</h2>
-        </div>
-        <div class="news-service-grid">
-          <div class="timeline"><div class="timeline-item">
+          <section class="content-section service-section" id="service">
+            <div class="section-heading service-heading">
+              <p class="section-kicker">News</p>
+              <h2>Updates.</h2>
+            </div>
+            <div class="news-service-grid">
+              <div class="timeline"><div class="timeline-item">
         <span>2025</span>
         <p>NeurIPS Spotlight paper on reinforcement learning with imperfect predictions.</p>
       </div><div class="timeline-item">
         <span>2025</span>
         <p>Eric and Wendy Schmidt AI Postdoctoral Fellow at the AI for Science Institute, Cornell.</p>
       </div></div>
-          <div class="service-panel">
-            <h3>Professional service</h3>
-            <p>Reviewer for NeurIPS, AAAI, IEEE CDC, ACC, PSCC, IEEE SmartGridComm, ACM e-Energy, Applied Energy, IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Smart Grid, IEEE Transactions on Power Systems, and related journals.</p><p>TPC member for IEEE SmartGridComm, ACM e-Energy poster session.</p>
-          </div>
-        </div>
-      </section>
+              <div class="service-panel">
+                <h3>Professional service</h3>
+                <p>Reviewer for NeurIPS, AAAI, IEEE CDC, ACC, PSCC, IEEE SmartGridComm, ACM e-Energy, Applied Energy, IEEE Transactions on Pattern Analysis and Machine Intelligence, IEEE Transactions on Smart Grid, IEEE Transactions on Power Systems, and related journals.</p><p>TPC member for IEEE SmartGridComm, ACM e-Energy poster session.</p>
+              </div>
+            </div>
+          </section>
 
-      <section class="contact-section" id="contact">
-        <div class="page-width contact-inner">
-          <div>
-            <p class="section-kicker">Contact</p>
-            <h2>Contact for collaborations and research conversations.</h2>
+          <section class="content-section contact-section" id="contact">
+            <div class="contact-inner">
+              <div>
+                <p class="section-kicker">Contact</p>
+                <h2>Contact for collaborations and research conversations.</h2>
+              </div>
+              <div class="contact-links">
+                <a href="mailto:chenbei.lu@cornell.edu">chenbei.lu@cornell.edu</a>
+                <a href="https://www.luchenbei.com">www.luchenbei.com</a>
+                <span>Ithaca, NY</span>
+              </div>
+            </div>
+          </section>
           </div>
-          <div class="contact-links">
-            <a href="mailto:chenbei.lu@cornell.edu">chenbei.lu@cornell.edu</a>
-            <a href="https://www.luchenbei.com">www.luchenbei.com</a>
-            <span>Ithaca, NY</span>
-          </div>
-        </div>
-      </section>
+      </div>
     </main>
     
     <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{&quot;token&quot;:&quot;438bde32be9a4df49ef16d1ca639e4bf&quot;}'></script>

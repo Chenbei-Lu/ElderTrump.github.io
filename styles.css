@@ -13,8 +13,8 @@
   --line: #e2e5df;
   --accent: #b47a3c;
   --accent-dark: #835628;
-  --news-highlight: #c95722;
-  --news-highlight-hover: #a93e20;
+  --news-highlight: #e26a1b;
+  --news-highlight-hover: #c95712;
   --navy: #233348;
 }
 
@@ -515,7 +515,7 @@ h3 {
   width: fit-content;
   color: var(--news-highlight);
   font-size: 0.78rem;
-  font-weight: 720;
+  font-weight: 760;
   line-height: 1.35;
 }
 

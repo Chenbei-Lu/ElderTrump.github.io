@@ -8,8 +8,6 @@
   --line: #e5e7ea;
   --accent: #355f7a;
   --accent-dark: #274b62;
-  --news-highlight: #355f7a;
-  --news-highlight-hover: #274b62;
   --navy: #202428;
   --font-body: Georgia, "Times New Roman", Times, serif;
 }
@@ -105,10 +103,6 @@ main {
 .contact-links a:hover,
 .profile-link:hover {
   color: var(--accent-dark);
-}
-
-.news-prefix:hover {
-  color: var(--news-highlight-hover);
 }
 
 .academic-layout {
@@ -459,24 +453,7 @@ h3 {
 }
 
 .news-timeline {
-  max-height: 320px;
-  overflow-y: auto;
-  padding-right: 10px;
-  scrollbar-gutter: stable;
-  overscroll-behavior: contain;
-}
-
-.news-timeline::-webkit-scrollbar {
-  width: 7px;
-}
-
-.news-timeline::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.news-timeline::-webkit-scrollbar-thumb {
-  border-radius: 999px;
-  background: #c8cdc5;
+  overflow: visible;
 }
 
 .timeline-item {
@@ -507,9 +484,9 @@ h3 {
 .news-prefix {
   display: block;
   width: fit-content;
-  color: var(--news-highlight);
+  color: var(--ink);
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.35;
 }
 
@@ -695,10 +672,6 @@ h3 {
 
   .teaching-list {
     grid-template-columns: 1fr;
-  }
-
-  .news-timeline {
-    max-height: 330px;
   }
 
   .timeline-item {

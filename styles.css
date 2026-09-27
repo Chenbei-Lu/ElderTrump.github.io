@@ -118,9 +118,9 @@ main {
 }
 
 .profile-avatar {
-  width: 112px;
-  height: 112px;
-  margin: 0 auto 22px;
+  width: 144px;
+  height: 144px;
+  margin: 0 auto 24px;
   border: 1px solid var(--line);
 }
 
@@ -591,15 +591,15 @@ h3 {
 
   .profile-card {
     display: grid;
-    grid-template-columns: 96px minmax(0, 1fr);
+    grid-template-columns: 120px minmax(0, 1fr);
     column-gap: 24px;
     align-items: start;
   }
 
   .profile-avatar {
     grid-row: 1 / span 4;
-    width: 96px;
-    height: 96px;
+    width: 120px;
+    height: 120px;
     margin: 0;
   }
 
@@ -635,8 +635,8 @@ h3 {
   }
 
   .profile-avatar {
-    width: 96px;
-    height: 96px;
+    width: 112px;
+    height: 112px;
     margin: 0 auto 20px;
   }
 

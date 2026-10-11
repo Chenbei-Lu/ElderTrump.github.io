@@ -602,10 +602,10 @@ h3 {
 .institution-logos {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 24px 34px;
+  gap: 24px 30px;
   align-items: center;
-  padding-top: 28px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 32px;
 }
 
 .institution-logo {
@@ -613,7 +613,7 @@ h3 {
   align-items: center;
   justify-content: center;
   min-width: 0;
-  height: 44px;
+  height: 50px;
 }
 
 .institution-logo img {
@@ -621,31 +621,31 @@ h3 {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 34px;
+  max-height: 38px;
   object-fit: contain;
 }
 
 .institution-logo-schmidt img {
-  max-width: 128px;
-  max-height: 40px;
+  max-width: 132px;
+  max-height: 42px;
 }
 
 .institution-logo-cornell img {
-  max-width: 156px;
+  max-width: 158px;
 }
 
 .institution-logo-tsinghua img {
-  max-width: 42px;
-  max-height: 42px;
+  max-width: 128px;
+  max-height: 44px;
 }
 
 .institution-logo-caltech img {
-  max-width: 126px;
+  max-width: 132px;
 }
 
 .institution-logo-hust img {
-  max-width: 56px;
-  max-height: 42px;
+  max-width: 154px;
+  max-height: 38px;
 }
 
 @media (max-width: 980px) {

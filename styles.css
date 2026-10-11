@@ -243,6 +243,43 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.institution-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 9px 22px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.institution-mark {
+  position: relative;
+  color: #686e74;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.institution-mark:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #a7abb0;
+}
+
+.institution-mark-wide {
+  font-size: 0.79rem;
+  font-weight: 600;
+}
+
 .venue,
 .pillar-card span,
 .timeline-item span {
@@ -324,6 +361,33 @@ h3 {
   display: grid;
   gap: 0;
   border-top: 1px solid var(--line);
+}
+
+.honors-list {
+  display: grid;
+  border-top: 1px solid var(--line);
+}
+
+.honor-item {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 20px;
+  align-items: baseline;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.honor-item span {
+  color: var(--quiet);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.honor-item p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.96rem;
+  line-height: 1.5;
 }
 
 .publication-card {
@@ -677,5 +741,18 @@ h3 {
   .timeline-item {
     grid-template-columns: 82px minmax(0, 1fr);
     gap: 12px;
+  }
+
+  .institution-strip {
+    gap: 9px 18px;
+  }
+
+  .institution-mark:not(:last-child)::after {
+    right: -10px;
+  }
+
+  .honor-item {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 14px;
   }
 }

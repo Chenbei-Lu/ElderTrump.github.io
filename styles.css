@@ -150,6 +150,7 @@ main {
   color: var(--navy);
   font-size: 0.98rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .profile-role span:nth-child(3) {

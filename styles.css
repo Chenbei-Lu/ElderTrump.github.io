@@ -366,6 +366,22 @@ h3 {
   font-style: italic;
 }
 
+.venue-highlight {
+  display: inline;
+  margin-left: 4px;
+  color: #8f2f2f;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.venue-highlight::before {
+  content: "\00b7";
+  margin-right: 4px;
+  color: var(--quiet);
+  font-weight: 400;
+}
+
 .publication-card h3 {
   font-size: 1.02rem;
   line-height: 1.42;
@@ -383,6 +399,11 @@ h3 {
 
 .authors {
   font-size: 0.93rem;
+}
+
+.authors strong {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 .paper-link {
